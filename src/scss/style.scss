@@ -2,6 +2,7 @@
 @import 'fonts';
 @import "custom";
 @import "index";
+@import "responsive";
 
 html{
   font-size: $primary_size;
@@ -12,5 +13,424 @@ html{
 body{
   margin: 0;
   padding: 0;
-  font-family: Rubik-Regular;
+  font-family: OpenSans-Regular;
+}
+/* ====== Header(navbar) block starts ====== */
+.navbar {
+  height: 70px;
+  border-bottom: 1px solid rgb(241, 239, 239);
+  position: absolute;
+  z-index: 50;
+  width: 100%;
+  font-size: 0.8125rem;
+
+  &-nav {
+    margin-right: 25px;
+
+    & li a {
+      color: #fff;
+    }
+  }
+  &-custom-bg{
+    background-color: rgba(45, 175, 229, 0.82);
+  }
+  .vertical-divider{
+    width: 1px;
+    height: 71px;
+    background-color: rgb(241, 239, 239);
+  }
+  & .form-inline{
+
+    & label{
+      margin-left: 25px;
+    }
+    & .input-search{
+      border: none;
+      background: transparent;
+      color: #ffffff;
+
+      &:focus,
+      &:active{
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+}
+/* ====== Header(navbar) block ends ====== */
+/* ====== First block starts ====== */
+.banner-first-block {
+  background-image: -moz-linear-gradient( -90deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,145,197) 82%, rgb(0,110,182) 100%);
+  background-image: -webkit-linear-gradient( -90deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,145,197) 82%, rgb(0,110,182) 100%);
+  //background-image: -ms-linear-gradient( -90deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,145,197) 82%, rgb(0,110,182) 100%);
+  //position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 469px;
+  z-index: 3;
+
+  &__descr{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &-title{
+      font-size: 2.125rem;
+      font-family: OpenSans-Bold;
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      text-align: left;
+      margin-bottom: 42px;
+    }
+    &-subtitle{
+      font-size: 1.5rem;
+      font-family: OpenSans-Regular;
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      text-align: left;
+      margin-bottom: 42px;
+    }
+    &-buttons{
+      margin-bottom: 65px;
+      .platform-btn{
+        border-radius: 16px;
+        background-color: rgb(233, 90, 12);
+        width: 113px;
+        height: 31px;
+        font-family: OpenSans-SemiBold;
+        font-size: 0.8125rem;
+        border: none;
+        color: $buttons_color;
+        cursor: pointer;
+      }
+      .cases-btn{
+        border-width: 1px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-radius: 16px;
+        width: 113px;
+        height: 31px;
+        font-family: OpenSans-SemiBold;
+        font-size: 0.8125rem;
+        background-color: transparent;
+        color: $buttons_color;
+        cursor: pointer;
+      }
+    }
+  }
+  &__img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    img{
+      margin-bottom: -45px;
+    }
+  }
+}
+/* ====== First block ends ====== */
+/* ====== Second block starts ====== */
+.modulaire-second-block{
+
+  &__title{
+    font-size: 1.5rem;
+    font-family: OpenSans-Regular;
+    color: rgb(45, 175, 229);
+    line-height: 1.833;
+    text-align: center;
+    padding: 50px 250px;
+  }
+
+  &__content{
+
+    .first-col{
+      padding: 0 60px;
+
+      img{
+        padding: 20px 0;
+      }
+    }
+    .second-col{
+      padding: 0 60px;
+
+      img{
+        padding: 35px 0;
+      }
+    }
+    .third-col{
+      padding: 0 60px;
+
+      img{
+        padding: 55px 0;
+      }
+    }
+    &-title{
+        font-size: 1.1875rem;
+        font-family: OpenSans-Bold;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: center;
+    }
+    &-dscrpt{
+        font-size: 1rem;
+        font-family: OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 1.813;
+        text-align: center;
+    }
+  }
+}
+/* ====== Second block ends ====== */
+/* ====== Third block starts ====== */
+.screenshots-third-block{
+  margin-top: 80px;
+  background-image: -webkit-linear-gradient(90deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
+
+  &__title{
+
+    h4{
+      font-size: 1.1875rem;
+      font-family: OpenSans-Bold;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+    }
+    h2{
+      font-size: 2.125rem;
+      font-family: OpenSans-Regular;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    p{
+      font-size: 1rem;
+      font-family: OpenSans-Regular;
+      color: rgb(128, 130, 131);
+      line-height: 2.188;
+      text-align: left;
+      padding: 0 150px;
+    }
+  }
+
+  &__buttons{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 42px;
+
+    .platform-btn{
+      border-radius: 16px;
+      background-color: rgb(233, 90, 12);
+      width: 113px;
+      height: 31px;
+      font-family: OpenSans-SemiBold;
+      font-size: 0.8125rem;
+      border: none;
+      color: $buttons_color;
+      margin-right: 5px;
+    }
+    .cases-btn-black{
+      border-width: 1px;
+      border-color: rgb(52, 59, 66);
+      border-style: solid;
+      border-radius: 16px;
+      width: 113px;
+      height: 31px;
+      font-family: OpenSans-SemiBold;
+      font-size: 0.8125rem;
+      background-color: transparent;
+      color: rgb(52, 59, 66);
+      margin-left: 5px;
+    }
+  }
+}
+/* ====== Third block ends ====== */
+/* ====== Fourth block starts ====== */
+.intergratie-fourth-block{
+  margin-top: 80px;
+
+  &__title{
+
+    h4{
+      font-size: 1.1875rem;
+      font-family: OpenSans-Bold;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+    }
+    h2{
+      font-size: 2.125rem;
+      font-family: OpenSans-Regular;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    p{
+      font-size: 1rem;
+      font-family: OpenSans-Regular;
+      color: rgb(128, 130, 131);
+      line-height: 2.188;
+      text-align: left;
+      padding: 0 150px;
+    }
+  }
+
+  &__content{
+
+    &-logo{
+      margin-top: 45px;
+      text-align: center;
+    }
+    &-line{
+      text-align: center;
+
+      .brand-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 900px;
+        margin: 0 auto;
+
+        .flex-item{
+          width: auto;
+          margin: 15px 25px 0;
+        }
+      }
+    }
+  }
+}
+/* ====== Fourth block ends ====== */
+/* ====== Fifth block starts ====== */
+.functional-fifth-block{
+  margin-top: 150px;
+
+  &__title{
+    margin-bottom: 90px;
+    h4{
+      font-size: 1.1875rem;
+      font-family: OpenSans-Bold;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+    }
+    h2{
+      font-size: 2.125rem;
+      font-family: OpenSans-Regular;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+  }
+  &__content{
+
+    .team-dscrpt, .network-dscrpt,
+    .planet-dscrpt, .security-dscrpt{
+      text-align: left;
+      margin: 40px;
+
+      &__title{
+        font-size: 1.1875rem;
+        font-family: OpenSans-Bold;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin-top: 35px;
+      }
+      &__text{
+        font-size: 0.75rem;
+        font-family: OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 2.167;
+        text-align: left;
+      }
+    }
+  }
+}
+/* ====== Fifth block ends ====== */
+/* ====== Sixth block starts ====== */
+.enthousiast-sixth-block{
+  background-image: -moz-linear-gradient( -93.071deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,110,182) 100%);
+  background-image: -webkit-linear-gradient( -93.071deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,110,182) 100%);
+  padding-top: 40px;
+
+  &__title{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    h2{
+      font-size: 2.125rem;
+      font-family: OpenSans-Bold;
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      text-align: left;
+      margin-bottom: 33px;
+    }
+    h4{
+      font-size: 1.5rem;
+      font-family: OpenSans-Regular;
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      text-align: left;
+    }
+    &-buttons{
+      margin-top: 50px;
+
+      .contact-btn {
+        border: none;
+        border-radius: 15px;
+        background-color: rgb(233, 90, 12);
+        width: 133px;
+        height: 31px;
+        font-family: OpenSans-SemiBold;
+        font-size: 0.8125rem;
+        border: none;
+        color: $buttons_color;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+      .pricing-btn {
+        border-width: 1px;
+        border-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-radius: 15px;
+        width: 111px;
+        height: 29px;
+        color: $buttons_color;
+        background-color: transparent;
+        font-family: OpenSans-SemiBold;
+        font-size: 0.8125rem;
+        cursor: pointer;
+        margin-left: 6px;
+      }
+    }
+  }
+}
+/* ====== Sixth block ends ====== */
+/* ====== Footer block starts ====== */
+footer{
+
+  .footer-terms{
+    display: flex;
+
+    a{
+      font-size: 0.75rem;
+      font-family: OpenSans-Regular;
+      color: rgb(193, 193, 193);
+      line-height: 2.583;
+      text-align: left;
+      margin: 0 22px 0 0;
+      text-decoration: none;
+
+    }
+  }
+  .blue-footer-line {
+    background-color: rgb(45, 175, 229);
+    height: 10px;
+  }
 }
