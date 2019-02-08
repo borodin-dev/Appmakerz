@@ -1,8 +1,482 @@
-@media screen and (min-width: 320px) and (max-width: 460px){
+/* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
+@media screen and (min-width: 320px) and (max-width: 575.98px){
+  /* ====== Header(navbar) block starts ====== */
+  .navbar-brand{
+    margin: 0;
+  }
+  /* ====== Header(navbar) block ends ====== */
+  /* ====== First block starts ====== */
+  .banner-first-block{
+    height: 100%;
+
+    &__descr {
+      margin-top: 85px;
+
+      &-title {
+        font-size: 1.725rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      &-subtitle {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      &-buttons {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
   .modulaire-second-block {
 
     &__title {
-      padding: 0 !important;
+      padding: 0;
+    }
+  }
+  /* ====== Second block ends ====== */
+  /* ====== Third block starts ====== */
+  .screenshots-third-block{
+    margin-top: 50px;
+
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__slider{
+      display: none;
+    }
+  }
+  /* ====== Third block ends ====== */
+  /* ====== Fourth block starts ====== */
+  .intergratie-fourth-block{
+    margin-top: 50px;
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__content-line .brand-logo {
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  /* ====== Fourth block ends ====== */
+  /* ====== Fifth block starts ====== */
+  .functional-fifth-block{
+    margin-top: 80px;
+
+    &__title {
+      margin-bottom: 0;
+
+      & h2 {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__content{
+
+      .team-dscrpt, .network-dscrpt,
+      .planet-dscrpt, .security-dscrpt {
+        text-align: center;
+        margin: 30px;
+        
+        &__title,
+        &__text{
+          text-align: center;
+        }
+      }
+    }
+  }
+  /* ====== Fifth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  .enthousiast-sixth-block{
+    padding-top: 25px;
+
+    &__title {
+      align-items: center;
+      padding-bottom: 30px;
+
+      & h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      & h4 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      &-buttons {
+        margin-top: 30px;
+      }
+    }
+  }
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  footer{
+    padding-top: 30px;
+
+    .footer-address{
+      text-align: center;
+
+      & h4,
+      & p{
+        text-align: center;
+      }
+      
+    }
+    .footer-info{
+      text-align: center;
+
+      & h3{
+        text-align: center;
+      }
+    }
+    .footer-terms{
+      text-align: center;
+    }
+  }
+  /* ====== Footer block ends ====== */
+}
+/* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+  /* ====== Header(navbar) block starts ====== */
+  .navbar-brand{
+    margin: 0;
+  }
+  /* ====== Header(navbar) block ends ====== */
+  /* ====== First block starts ====== */
+  .banner-first-block{
+    height: 100%;
+
+    &__descr {
+      margin-top: 85px;
+
+      &-title {
+        font-size: 1.725rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      &-subtitle {
+        font-size: 1.1rem;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      &-buttons {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .modulaire-second-block {
+
+    &__title {
+      padding: 0;
+    }
+    &__content .first-col,
+    &__content .second-col,
+    &__content .third-col{
+      text-align: center;
+    }
+  }
+  /* ====== Second block ends ====== */
+  /* ====== Third block starts ====== */
+  .screenshots-third-block{
+    margin-top: 50px;
+
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__slider{
+      display: none;
+    }
+  }
+  /* ====== Third block ends ====== */
+  /* ====== Fourth block starts ====== */
+  .intergratie-fourth-block{
+    margin-top: 50px;
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__content-line .brand-logo {
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  /* ====== Fourth block ends ====== */
+  /* ====== Fifth block starts ====== */
+  .functional-fifth-block{
+    margin-top: 80px;
+
+    &__title {
+      margin-bottom: 0;
+
+      & h2 {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__content{
+
+      .team-dscrpt, .network-dscrpt,
+      .planet-dscrpt, .security-dscrpt {
+        text-align: center;
+        margin: 30px;
+
+        &__title,
+        &__text{
+          text-align: center;
+        }
+      }
+    }
+  }
+  /* ====== Fifth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  .enthousiast-sixth-block{
+    padding-top: 25px;
+
+    &__title {
+      align-items: center;
+      padding-bottom: 30px;
+
+      & h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      & h4 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      &-buttons {
+        margin-top: 30px;
+      }
+    }
+  }
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  footer{
+    padding-top: 30px;
+
+    .footer-address{
+      text-align: center;
+
+      & h4,
+      & p{
+        text-align: center;
+      }
+
+    }
+    .footer-info{
+      text-align: center;
+
+      & h3{
+        text-align: center;
+      }
+    }
+    .footer-terms{
+      text-align: center;
+    }
+  }
+  /* ====== Footer block ends ====== */
+}
+/* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+  /* ====== Header(navbar) block starts ====== */
+  .navbar-brand{
+    margin: 0;
+  }
+  /* ====== Header(navbar) block ends ====== */
+  /* ====== First block starts ====== */
+  .banner-first-block{
+    height: 100%;
+
+    &__descr {
+      margin-top: 85px;
+
+      &-title {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      &-subtitle {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      &-buttons {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .modulaire-second-block {
+
+    &__title {
+      padding: 0;
+    }
+    &__content .first-col,
+    &__content .second-col,
+    &__content .third-col{
+      text-align: center;
+    }
+  }
+  /* ====== Second block ends ====== */
+  /* ====== Third block starts ====== */
+  .screenshots-third-block{
+    margin-top: 50px;
+
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__slider{
+      display: none;
+    }
+  }
+  /* ====== Third block ends ====== */
+  /* ====== Fourth block starts ====== */
+  .intergratie-fourth-block{
+    margin-top: 50px;
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__content-line .brand-logo {
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  /* ====== Fourth block ends ====== */
+  /* ====== Fifth block starts ====== */
+  .functional-fifth-block{
+    margin-top: 80px;
+
+    &__title {
+      margin-bottom: 0;
+
+      & h2 {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__content{
+
+      .team-dscrpt, .network-dscrpt,
+      .planet-dscrpt, .security-dscrpt {
+        text-align: center;
+        margin: 30px;
+
+        &__title,
+        &__text{
+          text-align: center;
+        }
+      }
+    }
+  }
+  /* ====== Fifth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  .enthousiast-sixth-block{
+    padding-top: 25px;
+
+    &__title {
+      align-items: center;
+      padding-bottom: 30px;
+
+      & h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      & h4 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      &-buttons {
+        margin-top: 30px;
+      }
+    }
+    .col-lg-7{
+      text-align: center;
+    }
+  }
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  footer{
+    padding-top: 30px;
+
+    .footer-address{
+      text-align: center;
+
+      & h4,
+      & p{
+        text-align: center;
+      }
+
+    }
+    .footer-info{
+      text-align: center;
+
+      & h3{
+        text-align: center;
+      }
+    }
+    .footer-terms{
+      text-align: center;
+    }
+  }
+  /* ====== Footer block ends ====== */
+}
+/* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* ====== Header(navbar) block starts ====== */
+  .navbar {
+
+    & .form-inline input#inputSearch {
+      width: 90px;
+      margin-left: 0;
+    }
+  }
+  /* ====== Header(navbar) block ends ====== */
+  /* ====== First block starts ====== */
+  .banner-first-block {
+
+    &__descr-title {
+      font-size: 2.05rem;
+      margin-bottom: 30px;
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .modulaire-second-block {
+
+    &__content .third-col img {
+      padding: 50px 0;
+    }
+  }
+
+  /* ====== Sixth block starts ====== */
+  .enthousiast-sixth-block {
+
+    &__title-buttons {
+      margin-top: 30px;
+    }
+  }
+  /* ====== Sixth block ends ====== */
+}
+/* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
+@media screen and (min-width: 1200px) and (max-width: 1312px){
+  .navbar {
+
+    & .form-inline input#inputSearch {
+      width: 100px;
     }
   }
 }

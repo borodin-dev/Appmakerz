@@ -13,9 +13,11 @@
         <nav class="navbar navbar-expand-lg navbar-custom-bg">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="img/logo_wit_antractiet.png" alt="Logo">
+                    <img class="img-fluid" src="img/logo_wit_antractiet.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -43,9 +45,9 @@
                     <div class="vertical-divider"></div>
                     <form class="form-inline my-2 my-lg-0">
                         <label for="inputSearch">
-                            <img src="img/icons/search.png" alt="Search">
+                            <!--<img class="search img-fluid" src="img/icons/search.png" alt="Search">-->
                         </label>
-                        <input id="inputSearch" class="form-control mr-sm-2 input-search" type="search">
+                        <input id="inputSearch" class="form-control mr-sm-2 input-search" type="search" name="search" rel="search">
                     </form>
                 </div>
             </div>
@@ -102,7 +104,23 @@
                         Proin placerat lectus odio, et molestie sapien euismod interdum. Vivamus imperdiet nisi et.
                     </p>
                 </div>
-                <div class="slider"></div>
+                <div class="screenshots-third-block__slider">
+                    <div id="carousel">
+                        <img class="img-fluid" src="img/iPhone_Login.png" id="item-3" />
+                        <img class="img-fluid" src="img/iPhone-Stats_lg.png" id="item-4" />
+                        <img class="img-fluid" src="img/iPhone-User_lg.png" id="item-5" />
+                        <img class="img-fluid" src="img/iPhone_QR_lg.png" id="item-1" />
+                        <img class="img-fluid" src="img/iPhone_Clock_lg.png" id="item-2" />
+                    </div>
+                    <div class="control-arrows">
+                        <a href="#" id="prev">
+                            <img class="img-fluid" src="img/icons/prev_icon.png" alt="Prev">
+                        </a>
+                        <a href="#" id="next">
+                            <img class="img-fluid" src="img/icons/next_icon.png" alt="Next">
+                        </a>
+                    </div>
+                </div>
                 <div class="screenshots-third-block__buttons">
                     <button class="platform-btn">Platform</button>
                     <button class="cases-btn-black">Cases</button>
@@ -148,12 +166,39 @@
                 </div>
                 <div class="functional-fifth-block__content">
                     <div class="row">
-                        <div class="col-lg-3">
-                            timeline
+                        <div class="offset-1 col-lg-2 timeline">
+                            <div class="timeline-donate">
+                                <div class="timeline-donate__line"></div>
+                                <div class="timeline-donate__title" style="padding: 21px">Donate</div>
+                            </div>
+                            <div class="timeline-appmakerz">
+                                <div class="timeline-appmakerz__line"></div>
+                                <div class="timeline-appmakerz__title">Appmakerz</div>
+                            </div>
+                            <div class="timeline-manage">
+                                <div class="timeline-manage__line"></div>
+                                <div class="timeline-manage__title">Manage</div>
+                            </div>
+                            <div class="timeline-source">
+                                <div class="timeline-source__line"></div>
+                                <div class="timeline-source__title">Source</div>
+                            </div>
+                            <div class="timeline-secure">
+                                <div class="timeline-secure__line"></div>
+                                <div class="timeline-secure__title">Secure</div>
+                            </div>
+                            <div class="timeline-scale">
+                                <div class="timeline-scale__line"></div>
+                                <div class="timeline-scale__title">Scale</div>
+                            </div>
+                            <div class="timeline-monitor">
+                                <div class="timeline-monitor__line"></div>
+                                <div class="timeline-monitor__title">Monitor</div>
+                            </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="team-dscrpt">
-                                <img src="img/icons/team_icon.png" alt="Team Icon">
+                                <img class="img-fluid" src="img/icons/team_icon.png" alt="Team Icon">
                                 <h4 class="team-dscrpt__title">Team management</h4>
                                 <p class="team-dscrpt__text">Vivamus et efficitur nibh.
                                     Curabitur commodo, tortor vel tempus molestie, dui lectus lobortis turpis,
@@ -161,7 +206,7 @@
                                 </p>
                             </div>
                             <div class="network-dscrpt">
-                                <img src="img/icons/network_icon.png" alt="Network Icon">
+                                <img class="img-fluid" src="img/icons/network_icon.png" alt="Network Icon">
                                 <h4 class="network-dscrpt__title">Cluster deployment</h4>
                                 <p class="network-dscrpt__text">Vivamus et efficitur nibh.
                                     Curabitur commodo, tortor vel tempus molestie, dui lectus lobortis turpis,
@@ -171,7 +216,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="planet-dscrpt">
-                                <img src="img/icons/planet_icon.png" alt="Planet Icon">
+                                <img class="img-fluid" src="img/icons/planet_icon.png" alt="Planet Icon">
                                 <h4 class="planet-dscrpt__title">Global Avialability</h4>
                                 <p class="planet-dscrpt__text">Vivamus et efficitur nibh.
                                     Curabitur commodo, tortor vel tempus molestie, dui lectus lobortis turpis,
@@ -214,18 +259,45 @@
         <!-- Footer Block -->
         <footer>
             <div class="container">
-                <div>
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-4">
-                        <h3></h3>
-                        <img src="" alt="Footer Logo">
+                <div class="row">
+                    <div class="offset-1 col-lg-3 footer-menu">
+                        <h5>Sitemap</h5>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-lg-6">
+                                <a href="#">Platform</a>
+                                <a href="#">Voorbeeld apps</a>
+                                <a href="#">Cases</a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-6">
+                                <a href="#">Team & Aanpak</a>
+                                <a href="#">Pricing</a>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 footer-address">
+                        <h4>Appmakerz</h4>
+                        <p>Raadhuisplein 20, 9203 EB Drachten</p>
+                        <div class="footer-address__email">
+                            <span class="title-letter">E</span>
+                            <a href="mailto:info@appmakerz.com" class="email">info@appmakerz.com</a>
+                        </div>
+                        <div class="footer-address__tel">
+                            <span class="title-letter">T</span>
+                            <span class="tel">085-301 28 51</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 footer-info">
+                        <h3>Wij ontwikkelen eenvoudige en modulaire business oplossingen voor en met u.</h3>
+                        <img class="img-fluid" src="img/logo_antractiet.png" alt="Footer Logo">
                     </div>
                 </div>
                 <div class="footer-terms">
-                    <a href="#">Copyright . All rights reserved.</a>
-                    <a href="#">Terms & conditions</a>
-                    <a href="#">Privacy Policy</a>
+                    <div class="offset-1 col-lg-7">
+                        <span>&#169; Copyright <script>document.write(new Date().getFullYear())</script>. All rights reserved.</span>
+                        <a href="#">Terms & conditions</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
                 </div>
             </div>
             <div class="blue-footer-line"></div>
