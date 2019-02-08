@@ -1,8 +1,24 @@
 /* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
 @media screen and (min-width: 320px) and (max-width: 575.98px){
   /* ====== Header(navbar) block starts ====== */
-  .navbar-brand{
-    margin: 0;
+  .navbar {
+
+    &-brand {
+      margin: 0;
+    }
+    .vertical-divider{
+      display: none;
+    }
+    & .form-inline {
+      position: relative;
+      width: 81px;
+      height: 50px;
+
+      input#inputSearch{
+        margin-left: 0;
+        width: 250px;
+      }
+    }
   }
   /* ====== Header(navbar) block ends ====== */
   /* ====== First block starts ====== */
@@ -45,7 +61,17 @@
       padding: 0;
     }
     &__slider{
-      display: none;
+      height: 480px;
+
+      & #carousel {
+        position: relative;
+        width: 220px !important;
+        height: 452px !important;
+        margin: 0 auto;
+      }
+      .control-arrows{
+        height: 450px;
+      }
     }
   }
   /* ====== Third block ends ====== */
@@ -66,6 +92,9 @@
   /* ====== Fifth block starts ====== */
   .functional-fifth-block{
     margin-top: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 
     &__title {
       margin-bottom: 0;
@@ -142,8 +171,24 @@
 /* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
 @media screen and (min-width: 576px) and (max-width: 767.98px){
   /* ====== Header(navbar) block starts ====== */
-  .navbar-brand{
-    margin: 0;
+  .navber {
+
+    &-brand {
+      margin: 0;
+    }
+    .vertical-divider {
+      display: none;
+    }
+    & .form-inline {
+      position: relative;
+      width: 81px;
+      height: 50px;
+
+      input#inputSearch{
+        margin-left: 0;
+        width: 250px;
+      }
+    }
   }
   /* ====== Header(navbar) block ends ====== */
   /* ====== First block starts ====== */
@@ -191,7 +236,17 @@
       padding: 0;
     }
     &__slider{
-      display: none;
+      height: 480px;
+
+      & #carousel {
+        position: relative;
+        width: 220px !important;
+        height: 452px !important;
+        margin: 0 auto;
+      }
+      .control-arrows{
+        height: 450px;
+      }
     }
   }
   /* ====== Third block ends ====== */
@@ -212,6 +267,9 @@
   /* ====== Fifth block starts ====== */
   .functional-fifth-block{
     margin-top: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 
     &__title {
       margin-bottom: 0;
@@ -288,8 +346,24 @@
 /* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
 @media screen and (min-width: 768px) and (max-width: 991.98px){
   /* ====== Header(navbar) block starts ====== */
-  .navbar-brand{
+  .navbar{
+
+    &-brand{
     margin: 0;
+  }
+    .vertical-divider{
+      display: none;
+    }
+    & .form-inline {
+      position: relative;
+      width: 81px;
+      height: 50px;
+
+      input#inputSearch{
+        margin-left: 0;
+        width: 250px;
+      }
+    }
   }
   /* ====== Header(navbar) block ends ====== */
   /* ====== First block starts ====== */
@@ -337,7 +411,7 @@
       padding: 0;
     }
     &__slider{
-      display: none;
+
     }
   }
   /* ====== Third block ends ====== */
@@ -358,6 +432,9 @@
   /* ====== Fifth block starts ====== */
   .functional-fifth-block{
     margin-top: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
 
     &__title {
       margin-bottom: 0;
@@ -438,6 +515,7 @@
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
   /* ====== Header(navbar) block starts ====== */
   .navbar {
+    padding: 0;
 
     & .form-inline input#inputSearch {
       width: 90px;
@@ -461,7 +539,15 @@
       padding: 50px 0;
     }
   }
+  /* ====== Third block starts ====== */
 
+  /* ====== Fifth block starts ====== */
+  .functional-fifth-block{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+  /* ====== Fifth block ends ====== */
   /* ====== Sixth block starts ====== */
   .enthousiast-sixth-block {
 
@@ -472,11 +558,18 @@
   /* ====== Sixth block ends ====== */
 }
 /* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
-@media screen and (min-width: 1200px) and (max-width: 1312px){
+@media screen and (min-width: 1200px) and (max-width: 1312.98px){
   .navbar {
-
+    padding: 0;
     & .form-inline input#inputSearch {
       width: 100px;
     }
+  }
+}
+/* ===== Resolution min-width - 1312 ===== */
+@media screen and (min-width: 1313px){
+  /* ====== Header(navbar) block starts ====== */
+  .navbar {
+    padding: 0;
   }
 }
