@@ -50,6 +50,11 @@
     &__title {
       padding: 0;
     }
+    &__content .first-col,
+    &__content .second-col,
+    &__content .third-col{
+      text-align: center;
+    }
   }
   /* ====== Second block ends ====== */
   /* ====== Third block starts ====== */
