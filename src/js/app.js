@@ -27,29 +27,28 @@ $(document).ready(function () {
             carousel.next();
             return false;
         });
-    } else if
-        ($(window).width() >= 768 || $(window).width() <= 991.98)
-        {
-            let carousel = $('#carousel').waterwheelCarousel({
-                // number tweeks to change apperance
-                separation: 127,
-                horizonOffsetMultiplier: 1,
-                sizeMultiplier: 0.78,
-                opacityMultiplier: 1,
-                flankingItems: 1,
-                // animation
-                speed: 700,
-                animationEasing: 'linear',
-            });
-            $('#prev').bind('click', function () {
-                carousel.prev();
-                return false
-            });
-            $('#next').bind('click', function () {
-                carousel.next();
-                return false;
-            });
-        } else {
+    } else if ($(window).width() >= 768 && $(window).width() <= 991.98) {
+        let carousel = $('#carousel').waterwheelCarousel({
+            // number tweeks to change apperance
+            separation: 127,
+            horizonOffsetMultiplier: 1,
+            sizeMultiplier: 0.78,
+            opacityMultiplier: 1,
+            flankingItems: 1,
+            // animation
+            speed: 700,
+            animationEasing: 'linear',
+        });
+        $('#prev').bind('click', function () {
+            carousel.prev();
+            return false
+        });
+        $('#next').bind('click', function () {
+            carousel.next();
+            return false;
+        });
+    } else {
+        console.log('bigger than992');
         let carousel = $('#carousel').waterwheelCarousel({
             // number tweeks to change apperance
             separation: 197,
@@ -69,7 +68,7 @@ $(document).ready(function () {
             carousel.next();
             return false;
         });
-    }
+    };
     $(window).on('resize', function(){
         var win = $(this); //this = window
         if (win.width() < 1400) {
