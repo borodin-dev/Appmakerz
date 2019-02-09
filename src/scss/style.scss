@@ -16,7 +16,6 @@ body{
 }
 /* ====== Header(navbar) block starts ====== */
 .navbar {
-  //padding:0;
   border-bottom: 1px solid rgb(241, 239, 239);
   position: absolute;
   z-index: 50;
@@ -74,16 +73,10 @@ body{
     & label {
       margin-left: 25px;
 
-      &:hover {
-        //content: url("../img/icons/search_.png");
-      }
-
       .search {
         cursor: pointer;
-
       }
     }
-
     & input#inputSearch {
       background-color: transparent;
       background-image: url("/img/icons/search.png");
@@ -92,15 +85,12 @@ body{
       color: #ffffff;
       font-size: 0.8125rem;
       border: none;
-
       -webkit-border-radius: 4px;
       -moz-border-radius: 4px;
       -ms-border-radius: 4px;
       -o-border-radius: 4px;
       border-radius: 4px;
-
       padding: 10px 5px;
-
       -webkit-transition: all 0.2s;
       -moz-transition: all 2s;
       transition: all 0.2s;
@@ -109,7 +99,6 @@ body{
       margin-left: 15px;
 
       &:focus {
-        /* Picked a random icon from Google */
         background-position: -20px center;
         text-indent: 0;
         background-image: none;
@@ -124,8 +113,6 @@ body{
 .banner-first-block {
   background-image: -moz-linear-gradient( -90deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,145,197) 82%, rgb(0,110,182) 100%);
   background-image: -webkit-linear-gradient( -90deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,145,197) 82%, rgb(0,110,182) 100%);
-  //background-image: -ms-linear-gradient( -90deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,145,197) 82%, rgb(0,110,182) 100%);
-  //position: absolute;
   left: 0px;
   top: 0px;
   width: 100%;
@@ -223,7 +210,6 @@ body{
     text-align: center;
     padding: 0 250px;
   }
-
   &__content{
 
     .first-col{
@@ -268,6 +254,8 @@ body{
 .screenshots-third-block{
   margin-top: 80px;
   background-image: -webkit-linear-gradient(90deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
+  background-image: -moz-linear-gradient(90deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
+  background-image: linear-gradient(90deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
 
   &__title{
 
@@ -393,7 +381,6 @@ body{
       padding: 0 150px;
     }
   }
-
   &__content{
 
     &-logo{
@@ -425,8 +412,13 @@ body{
   margin-top: 100px;
   padding-top: 100px;
   background-image: url('/img/Oval.png');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   &__title{
     margin-bottom: 90px;
+
     h4{
       font-size: 1.1875rem;
       font-family: OpenSans-Bold;
@@ -532,7 +524,26 @@ body{
         }
       }
     }
-    .team-dscrpt, .network-dscrpt,
+    .team-dscrpt, .network-dscrpt{
+      text-align: left;
+      margin: 40px -5px 0 0;
+
+      &__title{
+        font-size: 1.1875rem;
+        font-family: OpenSans-Bold;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin-top: 35px;
+      }
+      &__text{
+        font-size: 0.75rem;
+        font-family: OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 2.167;
+        text-align: left;
+      }
+    }
     .planet-dscrpt, .security-dscrpt{
       text-align: left;
       margin: 40px;
@@ -560,6 +571,7 @@ body{
 .enthousiast-sixth-block{
   background-image: -moz-linear-gradient( -93.071deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,110,182) 100%);
   background-image: -webkit-linear-gradient( -93.071deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,110,182) 100%);
+  background-image: linear-gradient( -93.071deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,110,182) 100%);
   padding-top: 40px;
 
   &__title{
@@ -567,6 +579,7 @@ body{
     height: 100%;
     justify-content: center;
     flex-direction: column;
+
     h2{
       font-size: 2.125rem;
       font-family: OpenSans-Bold;
@@ -729,8 +742,9 @@ footer{
   .footer-terms{
     display: flex;
     margin: 40px 0 20px;
-    div{
+    .order-to-show{
       padding: 0;
+      display: flex;
 
       span, a{
         font-size: 0.75rem;

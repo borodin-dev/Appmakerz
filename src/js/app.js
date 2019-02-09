@@ -6,7 +6,6 @@ import '../scss/style.scss';
 import './jquery.waterwheelCarousel.js';
 
 $(document).ready(function () {
-
     if ($(window).width() < 767.98) {
         let carousel = $('#carousel').waterwheelCarousel({
             // number tweeks to change apperance
@@ -29,13 +28,11 @@ $(document).ready(function () {
         });
     } else if ($(window).width() >= 768 && $(window).width() <= 991.98) {
         let carousel = $('#carousel').waterwheelCarousel({
-            // number tweeks to change apperance
             separation: 127,
             horizonOffsetMultiplier: 1,
             sizeMultiplier: 0.78,
             opacityMultiplier: 1,
             flankingItems: 1,
-            // animation
             speed: 700,
             animationEasing: 'linear',
         });
@@ -50,13 +47,11 @@ $(document).ready(function () {
     } else {
         console.log('bigger than992');
         let carousel = $('#carousel').waterwheelCarousel({
-            // number tweeks to change apperance
             separation: 197,
             horizonOffsetMultiplier: 1,
             sizeMultiplier: 0.78,
             opacityMultiplier: 1,
             flankingItems: 2,
-            // animation
             speed: 700,
             animationEasing: 'linear',
         });
@@ -69,10 +64,16 @@ $(document).ready(function () {
             return false;
         });
     };
-    $(window).on('resize', function(){
-        var win = $(this); //this = window
-        if (win.width() < 1400) {
-            location.reload();
+    /* reload script(for moments when you change resolution) */
+    let cachedWidth = $(window).width();
+    $(window).resize(function(){
+        let newWidth = $(window).width();
+        if(newWidth !== cachedWidth){
+            let win = $(this);
+            if (win.width() < 1400) {
+                location.reload();
+            }
+            cachedWidth = newWidth;
         }
     });
 });

@@ -111,6 +111,9 @@
 
     &__content{
 
+       .timeline{
+         display: none;
+       }
       .team-dscrpt, .network-dscrpt,
       .planet-dscrpt, .security-dscrpt {
         text-align: center;
@@ -169,6 +172,10 @@
     }
     .footer-terms{
       text-align: center;
+
+      .order-to-show {
+        flex-direction: column;
+      }
     }
   }
   /* ====== Footer block ends ====== */
@@ -286,6 +293,9 @@
 
     &__content{
 
+      .timeline{
+        display: none;
+      }
       .team-dscrpt, .network-dscrpt,
       .planet-dscrpt, .security-dscrpt {
         text-align: center;
@@ -344,6 +354,10 @@
     }
     .footer-terms{
       text-align: center;
+
+      .order-to-show {
+        flex-direction: column;
+      }
     }
   }
   /* ====== Footer block ends ====== */
@@ -451,6 +465,9 @@
 
     &__content{
 
+      .timeline{
+        display: none;
+      }
       .team-dscrpt, .network-dscrpt,
       .planet-dscrpt, .security-dscrpt {
         text-align: center;
@@ -512,6 +529,10 @@
     }
     .footer-terms{
       text-align: center;
+
+      .order-to-show {
+        flex-direction: column;
+      }
     }
   }
   /* ====== Footer block ends ====== */
@@ -551,6 +572,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+
+    &__content .timeline-appmakerz__title {
+      color: #cacaca;
+      padding: 21px 21px 21px 14px;
+    }
   }
   /* ====== Fifth block ends ====== */
   /* ====== Sixth block starts ====== */
@@ -559,6 +585,9 @@
     &__title-buttons {
       margin-top: 30px;
     }
+  }
+  .order-last{
+    order:  unset;
   }
   /* ====== Sixth block ends ====== */
 }
@@ -570,11 +599,17 @@
       width: 100px;
     }
   }
+  .order-last{
+    order: unset;
+  }
 }
 /* ===== Resolution min-width - 1312 ===== */
 @media screen and (min-width: 1313px){
   /* ====== Header(navbar) block starts ====== */
   .navbar {
     padding: 0;
+  }
+  .order-last{
+    order:  unset;
   }
 }
