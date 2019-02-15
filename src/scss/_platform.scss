@@ -1,0 +1,36 @@
+/* ====== Header(navbar) block starts ====== */
+.navbar{
+  position: relative;
+}
+.navbar-custom-bg{
+  background-color: rgba(47,177,231,1);
+}
+/* ====== Header(navbar) block ends ====== */
+/* ====== Breadcrumbs block starts ====== */
+nav[aria-label=breadcrumb]{
+  background-color: #fefefe;
+  border-bottom: 1px solid rgb(202, 202, 202);
+
+  .breadcrumb{
+    background-color: #fefefe;
+    margin: 0 0 0 35px;
+    padding: 7px;
+
+    &-item{
+      font-size: 0.625rem;
+      font-family: OpenSans-SemiBoldItalic;
+      color: rgb(202, 202, 202);
+      line-height: 1.7;
+      text-align: left;
+
+      a{
+        text-decoration: none;
+        color: rgb(202, 202, 202);
+      }
+    }
+    .breadcrumb-item + .breadcrumb-item:before{
+      color: rgb(202, 202, 202);
+      content: ">";
+    }
+  }
+}

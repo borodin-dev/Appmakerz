@@ -3,6 +3,8 @@
 @import "variables";
 @import "custom";
 
+
+
 html{
   font-size: $primary_size;
 }
@@ -765,3 +767,8 @@ footer{
 
 /* ====== Responsive ====== */
 @import "responsive";
+@import "pricing";
+@import "pricing_responsive";
+@import "team";
+@import "cases";
+@import "platform";

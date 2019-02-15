@@ -1,0 +1,308 @@
+/* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
+@media screen and (min-width: 320px) and (max-width: 575.98px){
+  /* ====== First block starts ====== */
+  .pricing-first-block{
+    background-position: 40% 100%;
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .first-price-blk,
+      .second-price-blk,
+      .third-price-blk {
+        max-width: 300px;
+        flex: auto;
+        height: fit-content;
+        margin: 30px auto;
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .vergelijk-second-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content {
+
+      #wrapper {
+        .price-variant{
+
+          &__basic,
+          &__advanced,
+          &__enterprise {
+            padding: 5px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(-180deg);
+          }
+        }
+        .accordionButton{
+
+          &__title{
+            padding: 14px 10px;
+          }
+          &__exist {
+             padding: 14px 0;
+          }
+      }
+        .accordionContent{
+          &-sub {
+            margin-left: 7px;
+
+            &__title {
+              padding: 18px 10px;
+            }
+            &__exist{
+              padding: 15px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+}
+/* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* ====== First block starts ====== */
+  .pricing-first-block{
+    background-position: 40% 100%;
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .first-price-blk,
+      .second-price-blk,
+      .third-price-blk {
+        max-width: 300px;
+        flex: auto;
+        height: fit-content;
+        margin: 30px auto;
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .vergelijk-second-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content {
+
+      #wrapper {
+        .price-variant{
+
+          &__basic,
+          &__advanced,
+          &__enterprise {
+            padding: 14px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(-180deg);
+          }
+        }
+        .accordionButton{
+
+          &__title{
+            padding: 14px 10px;
+          }
+          &__exist {
+            padding: 14px 0;
+          }
+        }
+        .accordionContent{
+          &-sub {
+            margin-left: 7px;
+
+            &__title {
+              padding: 18px 10px;
+            }
+            &__exist{
+              padding: 15px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+}
+/* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+  /* ====== First block starts ====== */
+  .pricing-first-block{
+    background-position: 40% 100%;
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .first-price-blk,
+      .second-price-blk,
+      .third-price-blk {
+        max-width: 323px;
+        flex: auto;
+        height: fit-content;
+        margin: 30px auto;
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .vergelijk-second-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content {
+
+      #wrapper {
+        .price-variant{
+
+          &__basic,
+          &__advanced,
+          &__enterprise {
+            padding: 23px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(-180deg);
+          }
+        }
+        .accordionButton{
+
+          &__title{
+            padding: 14px 10px;
+          }
+          &__exist {
+            padding: 14px 0;
+          }
+        }
+        .accordionContent{
+          &-sub {
+            margin-left: 7px;
+
+            &__title {
+              padding: 18px 10px;
+            }
+            &__exist{
+              padding: 15px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+}
+/* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* ====== First block starts ====== */
+  .pricing-first-block{
+    background-position: center bottom;
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .first-price-blk,
+      .second-price-blk,
+      .third-price-blk {
+        max-width: 323px;
+        flex: auto;
+        height: fit-content;
+        margin: 30px auto;
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .vergelijk-second-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content {
+
+      #wrapper {
+        .price-variant{
+
+          &__basic,
+          &__advanced,
+          &__enterprise {
+            padding: 36px;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+            transform: rotate(-180deg);
+          }
+        }
+        .accordionButton{
+
+          &__title{
+            padding: 14px 10px;
+          }
+          &__exist {
+            padding: 14px 0;
+          }
+        }
+        .accordionContent{
+          &-sub {
+            margin-left: 7px;
+
+            &__title {
+              padding: 18px 10px;
+            }
+            &__exist{
+              padding: 15px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+}
+/* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
+@media screen and (min-width: 1200px) and (max-width: 1312.98px){
+
+}
+/* ===== Resolution min-width - 1312 ===== */
+@media screen and (min-width: 1313px){
+
+}

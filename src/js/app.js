@@ -76,4 +76,39 @@ $(document).ready(function () {
             cachedWidth = newWidth;
         }
     });
+
+    /* Table accordion */
+    $(".fold-table tr.view").on("click", function(){
+        $(this).toggleClass("open").nextAll(".fold").slice(0, 3).toggleClass("open");
+    });
+});
+$(document).ready(function() {
+
+    //ACCORDION BUTTON ACTION (ON CLICK DO THE FOLLOWING)
+    $('.accordionButton').click(function() {
+
+        //REMOVE THE ON CLASS FROM ALL BUTTONS
+        $('.accordionButton').removeClass('on');
+
+        //NO MATTER WHAT WE CLOSE ALL OPEN SLIDES
+        $('.accordionContent').slideUp('fast');
+
+        //IF THE NEXT SLIDE WASN'T OPEN THEN OPEN IT
+        if($(this).next().is(':hidden') == true) {
+
+            //ADD THE ON CLASS TO THE BUTTON
+            $(this).addClass('on');
+            $(this).find('.chevron_up').css('transform', 'translateY(-50%) rotate(-180deg)');
+            //OPEN THE SLIDE
+            $(this).next().slideDown('normal');
+        } else {
+            $('.chevron_up').css('transform', 'translateY(-50%) rotate(0)');
+        }
+    });
+
+    /********************************************************************************************************************
+     CLOSES ALL S ON PAGE LOAD
+     ********************************************************************************************************************/
+    $('.accordionContent').hide();
+
 });

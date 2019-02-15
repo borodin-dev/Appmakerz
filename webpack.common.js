@@ -94,5 +94,25 @@ module.exports = {
             filename: 'index.html',
             template: 'app/index.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: 'pricing.html',
+            template: 'app/pricing.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'team.html',
+            template: 'app/team.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'platform.html',
+            template: 'app/platform.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'cases.html',
+            template: 'app/cases.html'
+        }),
+        // new HtmlWebpackPlugin({
+        //     filename: 'casesK.html',
+        //     template: 'app/casesK.html'
+        // }),
     ],
 };
