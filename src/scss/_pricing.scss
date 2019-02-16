@@ -1,39 +1,4 @@
-/* ====== Header(navbar) block starts ====== */
-.navbar{
-  position: relative;
-}
-.navbar-custom-bg{
-  background-color: rgba(47,177,231,1);
-}
-/* ====== Header(navbar) block ends ====== */
-/* ====== Breadcrumbs block starts ====== */
-nav[aria-label=breadcrumb]{
-  background-color: #fefefe;
-  border-bottom: 1px solid rgb(202, 202, 202);
-  
-  .breadcrumb{
-    background-color: #fefefe;
-    margin: 0 0 0 35px;
-    padding: 7px;
-
-    &-item{
-        font: 0.625rem OpenSans-SemiBoldItalic;
-        color: rgb(202, 202, 202);
-        line-height: 1.7;
-        text-align: left;
-
-      a{
-        text-decoration: none;
-        color: rgb(202, 202, 202);
-      }
-    }
-    .breadcrumb-item + .breadcrumb-item:before{
-      color: rgb(202, 202, 202);
-      content: ">";
-    }
-  }
-}
-/* ====== Breadcrums block ends ====== */
+@import "custom";
 /* ====== First block starts ====== */
 .pricing-first-block {
   margin-top: 55px;
@@ -341,12 +306,17 @@ nav[aria-label=breadcrumb]{
       .accordionButton {
         display: flex;
 
+        .very-first{
+          border-top: 1px solid;
+        }
         &__title {
           width: 70%;
           padding: 14px 35px;
           border: 1px solid grey;
           position: relative;
           font: 1rem OpenSans-Regular;
+          border-top: 0;
+          border-right: 0;
 
           .chevron_up{
             position: absolute;
@@ -362,6 +332,11 @@ nav[aria-label=breadcrumb]{
           text-align: center;
           padding: 14px;
           border: 1px solid grey;
+          border-top: 0;
+          border-right: 0;
+        }
+        &__exist:last-child{
+          border-right: 1px solid;
         }
 
       }
@@ -374,10 +349,12 @@ nav[aria-label=breadcrumb]{
           margin-left: 30px;
 
           &__title {
-            width: 70%;
+            width: 69.7%;
             padding: 18px 27px;
             border: 1px solid grey;
             font: 0.875rem OpenSans-Regular;
+            border-top: 0;
+            border-right: 0;
           }
 
           &__exist {
@@ -386,10 +363,15 @@ nav[aria-label=breadcrumb]{
             padding: 14px;
             border: 1px solid grey;
             justify-content: center;
+            border-top: 0;
+            border-right: 0;
 
             img {
               object-fit: contain;
             }
+          }
+          &__exist:last-child{
+            border-right: 1px solid;
           }
         }
       }

@@ -1,36 +1,100 @@
-/* ====== Header(navbar) block starts ====== */
-.navbar{
-  position: relative;
-}
-.navbar-custom-bg{
-  background-color: rgba(47,177,231,1);
-}
-/* ====== Header(navbar) block ends ====== */
-/* ====== Breadcrumbs block starts ====== */
-nav[aria-label=breadcrumb]{
-  background-color: #fefefe;
-  border-bottom: 1px solid rgb(202, 202, 202);
+@import "custom";
 
-  .breadcrumb{
-    background-color: #fefefe;
-    margin: 0 0 0 35px;
-    padding: 7px;
+/* ====== First block starts ====== */
+.platform-first-block {
+  margin: 55px 0 75px;
 
-    &-item{
-      font-size: 0.625rem;
-      font-family: OpenSans-SemiBoldItalic;
-      color: rgb(202, 202, 202);
-      line-height: 1.7;
+  &__title {
+    margin-bottom: 70px;
+
+    h4 {
+      font: 1.1875rem OpenSans-Bold;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    h2 {
+      font: 2.125rem OpenSans-Regular;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    p {
+      font: 1rem OpenSans-Regular;
+      color: rgb(128, 130, 131);
+      line-height: 2.188;
       text-align: left;
+      padding: 0 130px;
+    }
+  }
+  &__content{
 
-      a{
-        text-decoration: none;
-        color: rgb(202, 202, 202);
+    .order-12{
+      order: unset;
+    }
+    .line-team-1{
+      background-image: url(/img/path_2.png);
+      height: 80px;
+      background-repeat: no-repeat;
+      background-position: 49.8% 14.8%;
+    }
+    .low-code{
+      margin-top: -45px;
+    }
+    .line-team-2{
+      background-image: url(/img/path_1.png);
+      height: 80px;
+      background-repeat: no-repeat;
+      background-position: 36.3% 15.8%;
+    }
+    .cross-device{
+      margin-top: -50px;
+    }
+    .platform-first-block__left-blk{
+      margin: 50px 0 0 50px;
+
+      h2 {
+        font: 2.125rem OpenSans-Regular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 50px;
+      }
+      p{
+        font: 0.875rem OpenSans-Regular;
+        color: #808283;
+        line-height: 2;
+        padding: 0 100px 15px 0;
+      }
+      p:last-child{
+        padding-right: 120px;
       }
     }
-    .breadcrumb-item + .breadcrumb-item:before{
-      color: rgb(202, 202, 202);
-      content: ">";
+    .platform-first-block__right-blk{
+      margin-top: 45px;
+
+      h2 {
+        font: 2.125rem OpenSans-Regular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 50px;
+      }
+      p{
+        font: 0.875rem OpenSans-Regular;
+        color: #808283;
+        line-height: 2;
+        padding: 0 120px 20px 0;
+      }
     }
   }
 }
+/* ====== First block ends ====== */
+/* ====== Fourth block starts ====== */
+.intergratie-fourth-block{
+  margin: 80px;
+}
+/* ====== Fourth block ends ====== */

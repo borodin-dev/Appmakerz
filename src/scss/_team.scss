@@ -1,40 +1,4 @@
-/* ====== Header(navbar) block starts ====== */
-.navbar{
-  position: relative;
-}
-.navbar-custom-bg{
-  background-color: rgba(47,177,231,1);
-}
-/* ====== Header(navbar) block ends ====== */
-/* ====== Breadcrumbs block starts ====== */
-nav[aria-label=breadcrumb]{
-  background-color: #fefefe;
-  border-bottom: 1px solid rgb(202, 202, 202);
-
-  .breadcrumb{
-    background-color: #fefefe;
-    margin: 0 0 0 35px;
-    padding: 7px;
-
-    &-item{
-      font-size: 0.625rem;
-      font-family: OpenSans-SemiBoldItalic;
-      color: rgb(202, 202, 202);
-      line-height: 1.7;
-      text-align: left;
-
-      a{
-        text-decoration: none;
-        color: rgb(202, 202, 202);
-      }
-    }
-    .breadcrumb-item + .breadcrumb-item:before{
-      color: rgb(202, 202, 202);
-      content: ">";
-    }
-  }
-}
-/* ====== Breadcrumbs block ends ====== */
+@import "custom";
 /* ====== First block starts ====== */
 .team-first-block{
   margin: 55px 0 100px;
@@ -73,6 +37,10 @@ nav[aria-label=breadcrumb]{
     }
     .low-code{
       margin-top: -45px;
+
+      .order-12{
+        order: unset;
+      }
     }
     .line-team-2{
       background-image: url(/img/path_1.png);
@@ -166,7 +134,6 @@ nav[aria-label=breadcrumb]{
   &__content{
 
     &-left{
-      //text-align: center;
       .content-left__img-j {
         display: flex;
         justify-content: center;
@@ -180,7 +147,9 @@ nav[aria-label=breadcrumb]{
       }
     }
     &-right{
-      //text-align: center;
+      .order-12{
+        order: unset;
+      }
       .content-right__img{
         display: flex;
         justify-content: center;
@@ -212,3 +181,4 @@ nav[aria-label=breadcrumb]{
     }
   }
 }
+/* ====== Second block ends ====== */

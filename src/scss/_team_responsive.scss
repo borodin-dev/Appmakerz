@@ -1,0 +1,338 @@
+/* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
+@media screen and (min-width: 320px) and (max-width: 575.98px){
+  /* ====== First block starts ====== */
+  .team-first-block{
+    background-position: 40% 100%;
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .line-team-1,
+      .line-team-2{
+        visibility: hidden;
+      }
+      .low-code{
+
+        .order-12{
+          order: 12;
+        }
+      }
+      .team-first-block__left-blk{
+        margin-top: 50px;
+        h2{
+          text-align: center;
+        }
+        p{
+          padding: 0;
+          text-align: justify;
+        }
+      }
+      .team-first-block__right-blk{
+        margin: 90px 0 0 0;
+
+        h2{
+          text-align: center;
+        }
+        p{
+          padding: 0;
+          text-align: justify;
+        }
+        p:last-child{
+          padding-right: 0;
+        }
+      }
+      .cross-device{
+
+        .team-first-block__left-blk{
+          p{
+            padding: 0;
+          }
+        }
+        .col-lg-6 img{
+          margin: 0;
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .aanpak-second-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content {
+
+      &-left{
+        margin-top: 30px;
+        img{
+          height: inherit;
+        }
+      }
+      &-right{
+        margin-top: 30px;
+        .order-12{
+          order: 12;
+        }
+        img{
+          height: inherit;
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+}
+/* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* ====== First block starts ====== */
+  .team-first-block{
+    background-position: 40% 100%;
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+      .line-team-1,
+      .line-team-2{
+        visibility: hidden;
+      }
+      .low-code{
+
+        .order-12{
+          order: 12;
+        }
+      }
+      .team-first-block__left-blk{
+        margin-top: 50px;
+        h2{
+          text-align: center;
+        }
+        p{
+          padding: 0;
+          text-align: justify;
+        }
+      }
+      .team-first-block__right-blk{
+        margin: 90px 0 0 0;
+
+        h2{
+          text-align: center;
+        }
+        p{
+          padding: 0;
+          text-align: justify;
+        }
+        p:last-child{
+          padding-right: 0;
+        }
+      }
+      .cross-device{
+
+        .team-first-block__left-blk{
+          p{
+            padding: 0;
+          }
+        }
+        .col-lg-6 img{
+          margin: 0;
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .aanpak-second-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content {
+
+      &-left{
+        margin-top: 70px;
+
+        img{
+          height: inherit;
+        }
+      }
+      &-right{
+        margin-top: 70px;
+
+        .order-12{
+          order: 12;
+        }
+        img{
+          height: inherit;
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+}
+/* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+  /* ====== First block starts ====== */
+  .team-first-block{
+    background-position: 40% 100%;
+    &__title{
+      margin: 0;
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .row .col-lg-6{
+        text-align: center;
+      }
+      .line-team-1,
+      .line-team-2{
+        visibility: hidden;
+      }
+      .low-code{
+
+        .col-lg-6{
+          text-align: center;
+        }
+        .order-12{
+          order: 12;
+        }
+      }
+      .team-first-block__left-blk{
+        margin-top: 50px;
+        h2{
+          text-align: center;
+        }
+        p{
+          padding: 0;
+          text-align: justify;
+        }
+      }
+      .team-first-block__right-blk{
+        margin: 90px 0 0 0;
+
+        h2{
+          text-align: center;
+        }
+        p{
+          padding: 0;
+          text-align: justify;
+        }
+        p:last-child{
+          padding-right: 0;
+        }
+      }
+      .cross-device{
+
+        .team-first-block__left-blk{
+          p{
+            padding: 0;
+          }
+        }
+        .col-lg-6 {
+          text-align: center;
+          img {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .aanpak-second-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content {
+
+      &-left{
+        margin-top: 70px;
+
+        img{
+          height: inherit;
+        }
+      }
+      &-right{
+        margin-top: 70px;
+
+        .order-12{
+          order: 12;
+        }
+        img{
+          height: inherit;
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+}
+/* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .row{
+    justify-content: center;
+  }
+  .team-first-block{
+
+
+    &__content{
+      .line-team-1{
+        background-image: url(/img/path_2_sm.png);
+        height: 70px;
+        background-repeat: no-repeat;
+        background-position: 45% 44%;
+        position: relative;
+        margin-top: -24px;
+      }
+      .line-team-2{
+        background-image: url(/img/path_1_sm.png);
+        background-position: 46% 15.8%;
+      }
+      .team-first-block__left-blk{
+
+        p{
+          padding-right: 30px;
+        }
+      }
+    }
+  }
+}
+/* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
+@media screen and (min-width: 1200px) and (max-width: 1312.98px){
+
+}
+/* ===== Resolution min-width - 1313 and max-width - 1920 ===== */
+@media screen and (min-width: 1313px) and (max-width: 1920px){
+
+}
+/* ===== Resolution min-width - 1920 ===== */
+@media screen and (min-width: 1921px) and (max-width: 2560px){
+  /* ====== Second block starts ====== */
+  .aanpak-second-block {
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -112,3 +112,63 @@ $(document).ready(function() {
     $('.accordionContent').hide();
 
 });
+$(document).ready(function () {
+    if ($(window).width() < 767.98) {
+        let carouselCases = $('#carouselCases').waterwheelCarousel({
+            // number tweeks to change apperance
+            separation:                 50, // distance between items in carousel
+            horizonOffsetMultiplier:    1,   // multipled by horizon offset to increase/decrease offset for each additional item
+            sizeMultiplier:             0.48, // determines how drastically the size of each item changes
+            opacityMultiplier:          1, // determines how drastically the opacity of each item changes
+            flankingItems:              1,   // the number of items visible on either side of the center
+            // animation
+            speed:                      700,      // speed in milliseconds it will take to rotate from one to the next
+            animationEasing:            'linear', // the easing effect to use when animating
+        });
+        $('#prevCases').bind('click', function () {
+            carouselCases.prev();
+            return false
+        });
+        $('#nextCases').bind('click', function () {
+            carouselCases.next();
+            return false;
+        });
+    } else if ($(window).width() >= 768 && $(window).width() <= 991.98) {
+        let carouselCases = $('#carouselCases').waterwheelCarousel({
+            separation: 127,
+            horizonOffsetMultiplier: 1,
+            sizeMultiplier: 0.78,
+            opacityMultiplier: 1,
+            flankingItems: 1,
+            speed: 700,
+            animationEasing: 'linear',
+        });
+        $('#prevCases').bind('click', function () {
+            carouselCases.prev();
+            return false
+        });
+        $('#nextCases').bind('click', function () {
+            carouselCases.next();
+            return false;
+        });
+    } else {
+        console.log('bigger than992');
+        let carouselCases = $('#carouselCases').waterwheelCarousel({
+            separation: 155,
+            horizonOffsetMultiplier: 1,
+            sizeMultiplier: 0.78,
+            opacityMultiplier: 1,
+            flankingItems: 2,
+            speed: 700,
+            animationEasing: 'linear',
+        });
+        $('#prevCases').bind('click', function () {
+            carouselCases.prev();
+            return false
+        });
+        $('#nextCases').bind('click', function () {
+            carouselCases.next();
+            return false;
+        });
+    };
+})

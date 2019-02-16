@@ -110,9 +110,9 @@ module.exports = {
             filename: 'cases.html',
             template: 'app/cases.html'
         }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'casesK.html',
-        //     template: 'app/casesK.html'
-        // }),
+        new HtmlWebpackPlugin({
+            filename: 'kennisplatform_crow.html',
+            template: 'app/kennisplatform_crow.html'
+        }),
     ],
 };

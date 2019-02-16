@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Platform</title>
+    <title>Kennisplatform Crow</title>
 </head>
 <body>
 <div>
@@ -22,13 +22,13 @@
             <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0 justify-content-end">
                     <li class="nav-item active">
-                        <a class="nav-link" href="platform.html">Platform <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="platform.html">Platform</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Voorbeeld apps</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cases.html">Cases</a>
+                        <a class="nav-link" href="cases.html">Cases <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="team.html">Team & Aanpak</a>
@@ -53,101 +53,83 @@
         <div class="container">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Platform</li>
+                <li class="breadcrumb-item" aria-current="page"><a href="cases.html">Cases</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Kennisplatform Crow</li>
             </ol>
         </div>
     </nav>
-    <!-- First Block - Platform -->
-    <div class="platform-first-block">
+    <!--  First Block - Cases -->
+    <div class="kennis-first-block">
         <div class="container">
-            <div class="platform-first-block__title">
-                <h4>Platform</h4>
-                <h2>Een solide basis is het begin</h2>
+            <div class="prev-page-btn">
+                <a href="cases.html">Terug naar overzicht</a>
+            </div>
+            <div class="kennis-first-block__title">
+                <h4>Cases</h4>
+                <h2>Logistiek en planning samen</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dapibus enim purus, sit amet dapibus purus
-                    porta vitae. Quisque maximus tincidunt tortor, at dapibus purus pharetra quis. Aenean auctor mi non ipsum
-                    lacinia, hendrerit gravida ante cursus.
+                    Etiam accumsan fermentum facilisis. Vestibulum ipsum dui, lacinia nec dignissim quis, dictum rhoncus metus.
+                    Nullam a enim id odio bibendum commodo convallis nec libero. Integer convallis, purus vel commodo egestas,
+                    justo mi ullamcorper sapien, et suscipit risus. Etiam accumsan fermentum facilisis. Vestibulum ipsum dui.
                 </p>
             </div>
-            <div class="platform-first-block__content">
-                <div class="row">
-                    <div class="col-lg-6  order-12">
-                        <img class="img-fluid" src="img/iPad_weekly.png" alt="User Builder">
+            <div class="kennis-first-block__content">
+                <div class="kennis-first-block__content-slider">
+                    <div id="carouselCases">
+                        <img class="img-fluid" src="img/iPhone_confirm.png" id="item-3" />
+                        <img class="img-fluid" src="img/iPad.png" id="item-5" />
+                        <img class="img-fluid" src="" id="item-1" />
+                        <img class="img-fluid" src="img/iPhone_map.png" id="item-4" />
+                        <img class="img-fluid" src="img/iPhone_completed.png" id="item-2" />
                     </div>
-                    <div class="col-lg-5 platform-first-block__left-blk">
-                        <h2>User interface builder</h2>
-                        <p>Etiam accumsan fermentum facilisis. Vestibulum ipsum dui, lacinia nec dignissim quis, dictum
-                            rhoncus metus. Nullam a enim id odio bibendum commodo convallis nec libero.</p>
-                        <p>
-                            Integer convallis, purus vel commodo egestas, justo mi ullamcorper sapien, et suscipit risus
-                            enim vitae risus. Phasellus lacinia, est ac semper porttitor, mauris odio tincidunt ante.</p>
-                    </div>
-                </div>
-                <div class="line-team-2"></div>
-                <div class="row low-code">
-                    <div class="col-lg-5 platform-first-block__right-blk">
-                        <h2>Visual modelling</h2>
-                        <p>Etiam accumsan fermentum facilisis. Vestibulum ipsum dui, lacinia nec dignissim quis, dictum rhoncus metus.
-                            Nullam a enim id odio bibendum commodo convallis nec libero.  Integer convallis, purus vel commodo egestas,
-                            justo mi ullamcorper sapien, et suscipit risus
-                        </p>
-                        <p>
-                            Enim vitae risus. Phasellus lacinia, est ac semper porttitor, mauris odio tincidunt ante.
-                        </p>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="img/iPad_modelling.png" alt="Visual Modelling">
+                    <div class="control-arrows">
+                        <a href="#" id="prevCases">
+                            <img class="img-fluid" src="img/icons/prev_icon.png" alt="Prev">
+                        </a>
+                        <a href="#" id="nextCases">
+                            <img class="img-fluid" src="img/icons/next_icon.png" alt="Next">
+                        </a>
                     </div>
                 </div>
-                <div class="line-team-1"></div>
-                <div class="row cross-device">
-                    <div class="col-lg-6  order-12">
-                        <img class="img-fluid" src="img/iPad_reusability.png" alt="Reusability">
-                    </div>
-                    <div class="col-lg-5 platform-first-block__left-blk">
-                        <h2>Reusability</h2>
-                        <p>Etiam accumsan fermentum facilisis. Vestibulum ipsum dui, lacinia nec dignissim quis, dictum rhoncus metus.
-                            Nullam a enim id odio bibendum commodo convallis nec libero. Integer convallis, purus vel commodo egestas,
-                            justo mi ullamcorper.
-                        </p>
-                        <p>
-                            Sapien, et suscipit risus enim vitae risus. Phasellus lacinia, est ac semper porttitor, mauris odio tincidunt ante thoncus metus.
-                        </p>
+                <div class="kennis-first-block__content-text">
+                    <div class="row">
+                        <div class="offset-1 col-lg-7 col-sm-6">
+                            <p class="text-dscrpt">Suspendisse maximus eu lectus ut laoreet. Donec sollicitudin purus a augue aliquam, et cursus quam molestie.
+                                Vivamus ullamcorper commodo nisi bibendum volutpat. Cras dolor purus, consequat quis consectetur nec,
+                                faucibus sit amet massa. Curabitur a est nisi. In scelerisque pharetra tincidunt. Phasellus tellus elit,
+                                efficitur vitae nulla eget, dapibus consectetur ante.
+                            </p>
+                            <p class="text-dscrpt">In hac habitasse platea dictumst. Class aptent taciti sociosqu ad litora torquent per conubia nostra,
+                                per inceptos himenaeos. Vivamus quis accumsan eros. Aenean nec molestie odio. Etiam lacinia felis eget
+                                ligula auctor egestas. In quis leo nec libero hendrerit bibendum. Aliquam sapien leo, facilisis vel dolor sed,
+                                tincidunt molestie risus. Pellentesque at euismod sapien. Phasellus efficitur lacinia pharetra.
+                                Sed non dui massa. Praesent a tortor et sem semper.
+                            </p>
+                            <p class="text-quote">“Appmakerz heeft ons laten zien hoe eenvoudig een platform gebouwd word, en voor een scherpe prijs!"</p>
+                            <p class="text-author">Gerrit ten Besten - Kennisplatform Crow</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <ul class="text-list">
+                                <li>Inventaris bijhouden</li>
+                                <li>Prijzen on-the-go aanpassen</li>
+                                <li>Dubbele beveiliging</li>
+                                <li>Easy to learn</li>
+                                <li>Inventaris bijhouden</li>
+                                <li>Prijzen on-the-go aanpassen</li>
+                                <li>Dubbele beveiliging</li>
+                                <li>Easy to learn</li>
+                            </ul>
+                            <div class="text-img">
+                                <img class="img-fluid" src="img/crow.png" alt="Crow Logo">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Fourth Block - Intergratie -->
-    <div class="intergratie-fourth-block">
-        <div class="container">
-            <div class="intergratie-fourth-block__title">
-                <h4>Intergratie</h4>
-                <h2>Flexibel inzetbaar</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper justo nec commodo aliquam.
-                    Proin placerat lectus odio, et molestie sapien euismod interdum. Vivamus imperdiet nisi et nulla consectetur.
-                </p>
-            </div>
-            <div class="intergratie-fourth-block__content">
-                <div class="intergratie-fourth-block__content-logo">
-                    <img class="img-fluid" src="img/logo_kleur.png" alt="Logo">
-                </div>
-                <div class="intergratie-fourth-block__content-line">
-                    <img class="img-fluid" src="img/Line.png" alt="Line">
-                    <div class="brand-logo">
-                        <img class="img-fluid flex-item" src="img/exact.png" alt="Exact">
-                        <img class="img-fluid flex-item" src="img/wordpress.png" alt="WordPress">
-                        <img class="img-fluid flex-item" src="img/appstore.png" alt="App Store">
-                        <img class="img-fluid flex-item" src="img/googleplay.png" alt="Google Play">
-                        <img class="img-fluid flex-item" src="img/android.png" alt="Android">
-                        <img class="img-fluid flex-item" src="img/office.png" alt="Office">
-                        <img class="img-fluid flex-item" src="img/adobe.png" alt="Adobe">
-                        <img class="img-fluid flex-item" src="img/windows.png" alt="Windows">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+
     <!-- Sixth Block - Enthousiast -->
     <div class="enthousiast-sixth-block">
         <div class="container">

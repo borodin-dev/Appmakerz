@@ -1,0 +1,137 @@
+/* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
+@media screen and (min-width: 320px) and (max-width: 575.98px){
+  /* ====== First block starts ====== */
+  .kennis-first-block {
+
+    .prev-page-btn {
+      margin: 30px auto;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      &-text{
+        .offset-1{
+          margin: 0;
+        }
+        .text-dscrpt{
+          padding: 0 10px;
+        }
+        .text-quote{
+          padding: 0;
+          text-align: center;
+        }
+        .text-author{
+          padding: 0;
+          text-align: center;
+        }
+        .text-img{
+          bottom: unset;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+}
+/* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* ====== First block starts ====== */
+  .kennis-first-block {
+
+    .prev-page-btn {
+      margin: 30px auto;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      &-text{
+        .offset-1{
+          margin: 0;
+        }
+        .text-dscrpt{
+          padding: 0 10px;
+        }
+        .text-quote{
+          padding: 0;
+          text-align: center;
+        }
+        .text-author{
+          padding: 0;
+          text-align: center;
+        }
+        .text-img{
+          bottom: unset;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+}
+/* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+  /* ====== First block starts ====== */
+  .kennis-first-block {
+
+    .prev-page-btn {
+      margin: 30px auto;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      &-text{
+        .offset-1{
+          margin: 0;
+        }
+        .text-dscrpt{
+          padding: 0 10px;
+        }
+        .text-quote{
+          padding: 0;
+          text-align: left;
+        }
+        .text-author{
+          padding: 0;
+          text-align: left;
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+}
+/* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+/* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
+@media screen and (min-width: 1200px) and (max-width: 1312.98px){
+
+}
+/* ===== Resolution min-width - 1313 and max-width - 1920 ===== */
+@media screen and (min-width: 1313px) and (max-width: 1920px){
+
+}
+/* ===== Resolution min-width - 1920 ===== */
+@media screen and (min-width: 1921px) and (max-width: 2560px){
+
+}

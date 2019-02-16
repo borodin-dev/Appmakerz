@@ -1,36 +1,402 @@
-/* ====== Header(navbar) block starts ====== */
-.navbar{
-  position: relative;
-}
-.navbar-custom-bg{
-  background-color: rgba(47,177,231,1);
-}
-/* ====== Header(navbar) block ends ====== */
-/* ====== Breadcrumbs block starts ====== */
-nav[aria-label=breadcrumb]{
-  background-color: #fefefe;
-  border-bottom: 1px solid rgb(202, 202, 202);
+@import "custom";
 
-  .breadcrumb{
-    background-color: #fefefe;
-    margin: 0 0 0 35px;
-    padding: 7px;
+/* ====== First block starts ====== */
+.cases-first-block{
+     margin: 55px 0 75px;
 
-    &-item{
-      font-size: 0.625rem;
-      font-family: OpenSans-SemiBoldItalic;
-      color: rgb(202, 202, 202);
-      line-height: 1.7;
-      text-align: left;
+     &__title{
+       margin-bottom: 70px;
 
-      a{
-        text-decoration: none;
-        color: rgb(202, 202, 202);
+       h4 {
+         font: 1.1875rem OpenSans-Bold;
+         color: rgb(45, 175, 229);
+         line-height: 1.2;
+         text-align: center;
+       }
+       h2 {
+         font: 2.125rem OpenSans-Regular;
+         color: rgb(45, 175, 229);
+         line-height: 1.2;
+         text-align: center;
+         margin-bottom: 35px;
+       }
+       p {
+         font: 1rem OpenSans-Regular;
+         color: rgb(128, 130, 131);
+         line-height: 2.188;
+         text-align: left;
+         padding: 0 130px;
+       }
+     }
+  &__content{
+    margin-top: 90px;
+
+    .content-dscrpt{
+
+      &__title{
+        font: 2.125rem OpenSans-Regular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 32px;
+      }
+      &__subtitle{
+        font: 0.875rem OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 2.071;
+        text-align: left;
+        margin-bottom: 40px;
+        padding-right: 40px;
+      }
+      &__list{
+        font: 0.875rem OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 2.5;
+      }
+      &__logo{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 25px;
+      }
+      &__quote{
+        font: 1.125rem OpenSans-Light;
+        color: rgb(45, 175, 229);
+        line-height: 1.778;
+        text-align: left;
+      }
+      &__author{
+        font: 1rem OpenSans-Regular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
       }
     }
-    .breadcrumb-item + .breadcrumb-item:before{
-      color: rgb(202, 202, 202);
-      content: ">";
+    .content-example {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &__img {
+      }
+
+      &__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+          font: 0.8125rem OpenSans-SemiBold;
+          color: rgb(45, 175, 229);
+          line-height: 1.2;
+          text-align: center;
+          -moz-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          -webkit-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          -ms-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          border: 1px solid  rgb(45, 175, 229);
+          width: 29px;
+          height: 121px;
+          border-radius: 50px;
+          transform: rotate(-180deg);
+          writing-mode: vertical-rl;
+          padding: 5.5px;
+          cursor: pointer;
+          transition: ease-out .2s;
+          background-color: transparent;
+          text-decoration: none;
+
+          &:hover{
+            background-color: rgba(120, 231, 255,0.3);
+          }
+        }
+      }
     }
   }
 }
+/* ====== First block ends ====== */
+/* ====== Second block starts ====== */
+.eenvoudig-second-block{
+  padding: 75px 0;
+  background-color: #f0f0f0;
+
+  &__content{
+
+    .content-dscrpt{
+
+      &__title{
+        font: 2.125rem OpenSans-Regular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 32px;
+      }
+      &__subtitle{
+        font: 0.875rem OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 2.071;
+        text-align: left;
+        margin-bottom: 40px;
+        padding-right: 40px;
+      }
+      &__list{
+        font: 0.875rem OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 2.5;
+      }
+      &__logo{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-bottom: 25px;
+      }
+      &__quote{
+        font: 1.125rem OpenSans-Light;
+        color: rgb(45, 175, 229);
+        line-height: 1.778;
+        text-align: left;
+      }
+      &__author{
+        font: 1rem OpenSans-Regular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+      }
+    }
+    .content-example {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &__img {
+      }
+
+      &__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+          font: 0.8125rem OpenSans-SemiBold;
+          color: rgb(45, 175, 229);
+          line-height: 1.2;
+          text-align: center;
+          -moz-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          -webkit-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          -ms-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          border: 1px solid  rgb(45, 175, 229);
+          width: 29px;
+          height: 121px;
+          border-radius: 50px;
+          transform: rotate(-180deg);
+          writing-mode: vertical-rl;
+          padding: 5.5px;
+          cursor: pointer;
+          transition: ease-out .2s;
+          background-color: transparent;
+          text-decoration: none;
+
+          &:hover{
+            background-color: rgba(120, 231, 255,0.3);
+          }
+        }
+      }
+    }
+  }
+}
+/* ====== Second block ends ====== */
+/* ====== Third block starts ====== */
+.portal-third-block{
+
+  &__content{
+    margin-top: 90px;
+
+    .content-dscrpt{
+
+      &__title{
+        font: 2.125rem OpenSans-Regular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 32px;
+      }
+      &__subtitle{
+        font: 0.875rem OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 2.071;
+        text-align: left;
+        margin-bottom: 40px;
+        padding-right: 40px;
+      }
+      &__list{
+        font: 0.875rem OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 2.5;
+      }
+      &__logo{
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 25px;
+      }
+      &__quote{
+        font: 1.125rem OpenSans-Light;
+        color: rgb(45, 175, 229);
+        line-height: 1.778;
+        text-align: left;
+      }
+      &__author{
+        font: 1rem OpenSans-Regular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+      }
+    }
+    .content-example {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &__img {
+      }
+
+      &__btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        a {
+          font: 0.8125rem OpenSans-SemiBold;
+          color: rgb(45, 175, 229);
+          line-height: 1.2;
+          text-align: center;
+          -moz-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          -webkit-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          -ms-transform: matrix( -1.83697019872103e-16,-1,1,-1.83697019872103e-16,0,0);
+          border: 1px solid  rgb(45, 175, 229);
+          width: 29px;
+          height: 121px;
+          border-radius: 50px;
+          transform: rotate(-180deg);
+          writing-mode: vertical-rl;
+          padding: 5.5px;
+          cursor: pointer;
+          transition: ease-out .2s;
+          background-color: transparent;
+          text-decoration: none;
+
+          &:hover{
+            background-color: rgba(120, 231, 255,0.3);
+          }
+        }
+      }
+    }
+  }
+}
+/* ====== Third block ends ====== */
+/* ====== Fourth block starts ====== */
+.velen-fourth-block{
+  padding-top: 95px;
+
+  &__title{
+    margin-bottom: 70px;
+
+    h4 {
+      font: 1.1875rem OpenSans-Bold;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+    }
+    h2 {
+      font: 2.125rem OpenSans-Regular;
+      color: rgb(45, 175, 229);
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    p {
+      font: 1rem OpenSans-Regular;
+      color: rgb(128, 130, 131);
+      line-height: 2.188;
+      text-align: left;
+      padding: 0 130px;
+    }
+  }
+  &__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .content-logo {
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      align-items: center;
+
+      &:nth-child(1) {
+        padding-left: 45px;
+
+        .content-logo__link {
+          padding: 56px 0 27px;
+        }
+
+        img {
+          margin: 20px;
+        }
+      }
+
+      &:nth-child(2) {
+        margin: 0 50px;
+
+        .content-logo__link {
+          padding: 51px 0 27px;
+        }
+      }
+
+      &:nth-child(3) {
+
+        .content-logo__link {
+          padding: 47px 0 27px;
+        }
+
+        img {
+          margin-top: -20px;
+        }
+      }
+
+      &:nth-child(4) {
+        padding-left: 45px;
+      }
+
+      &:nth-child(5) {
+        margin: 0 50px;
+
+        .content-logo__link {
+          padding: 45px 0 27px;
+        }
+      }
+    }
+    .content-logo__link{
+      padding: 27px;
+      font: 0.875rem OpenSans-Bold;
+    }
+    .content-logo__btn{
+      font: 0.8125rem OpenSans-SemiBold;
+      color: rgb(233, 90, 12);
+      line-height: 1.2;
+      text-align: center;
+      border: 1px solid rgb(233, 90, 12);
+      border-radius: 15px;
+      width: 121px;
+      height: 29px;
+      padding: 6px 16px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: ease-out .2s;
+      background-color: transparent;
+      margin-bottom: 80px;
+
+      &:hover{
+        background-color: rgba(248,201,176,0.3);
+      }
+    }
+  }
+}
+/* ====== Fourth block ends ====== */

@@ -255,9 +255,10 @@ body{
 /* ====== Third block starts ====== */
 .screenshots-third-block{
   margin-top: 80px;
-  background-image: -webkit-linear-gradient(90deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
-  background-image: -moz-linear-gradient(90deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
-  background-image: linear-gradient(90deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
+  background-image: url('/img/screenshots_bg.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+
 
   &__title{
 
@@ -313,8 +314,7 @@ body{
       background-color: rgb(233, 90, 12);
       width: 113px;
       height: 31px;
-      font-family: OpenSans-SemiBold;
-      font-size: 0.8125rem;
+      font: 0.8125rem OpenSans-SemiBold;
       border: none;
       color: $buttons_color;
       margin-right: 5px;
@@ -328,17 +328,16 @@ body{
         background-color: rgba(233, 90, 12, 0.8);
       }
     }
-    .cases-btn-black{
+    .cases-btn-white{
       border-width: 1px;
-      border-color: rgb(52, 59, 66);
+      border-color: #ffffff;
       border-style: solid;
       border-radius: 16px;
       width: 113px;
       height: 31px;
-      font-family: OpenSans-SemiBold;
-      font-size: 0.8125rem;
+      font: 0.8125rem OpenSans-SemiBold;
       background-color: transparent;
-      color: rgb(52, 59, 66);
+      color: #ffffff;
       margin-left: 5px;
       cursor: pointer;
       -webkit-transition: 0.2s ease-out;
@@ -770,5 +769,10 @@ footer{
 @import "pricing";
 @import "pricing_responsive";
 @import "team";
+@import "team_responsive";
 @import "cases";
+@import "cases_responsive";
+@import "kennisplatform";
+@import "kennisplatform_responsive";
 @import "platform";
+@import "platform_responsive";

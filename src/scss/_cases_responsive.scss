@@ -1,0 +1,565 @@
+/* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
+@media screen and (min-width: 320px) and (max-width: 575.98px){
+  /* ====== First block starts ====== */
+  .cases-first-block{
+
+    .offset-1{
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+        }
+      }
+      .content-example{
+        flex-direction: column;
+
+        &__btn{
+          display: initial;
+          margin-top: 30px;
+
+          a{
+            transform: unset;
+            writing-mode: unset;
+          }
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .eenvoudig-second-block {
+
+    .offset-1 {
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+        }
+      }
+      .content-example{
+        flex-direction: column;
+
+        &__btn{
+          display: initial;
+          margin-top: 30px;
+
+          a{
+            transform: unset;
+            writing-mode: unset;
+          }
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+  /* ====== Third block ends ====== */
+  .portal-third-block{
+
+
+    .offset-1 {
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+        }
+      }
+      .content-example{
+        flex-direction: column;
+
+        &__btn{
+          display: initial;
+          margin-top: 30px;
+
+          a{
+            transform: unset;
+            writing-mode: unset;
+          }
+        }
+      }
+    }
+  }
+  /* ====== Third block ends ====== */
+  /* ====== Fourth block starts ====== */
+  .velen-fourth-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .offset-1{
+        margin: 0;
+      }
+      .content-logo{
+
+        &:nth-child(1){
+          padding: 0;
+
+          .content-logo__link{
+            padding: 27px;
+          }
+        }
+        &:nth-child(2){
+          margin: 0;
+        }
+        &:nth-child(3){}
+        &:nth-child(4){
+          padding: 0;
+        }
+        &:nth-child(5){
+          margin: 0;
+        }
+      }
+    }
+  }
+  /* ====== Fourth block ends ====== */
+
+}
+/* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  /* ====== First block starts ====== */
+  .cases-first-block{
+
+    .offset-1{
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+        }
+      }
+      .content-example{
+        flex-direction: column;
+
+        &__btn{
+          display: initial;
+          margin-top: 30px;
+
+          a{
+            transform: unset;
+            writing-mode: unset;
+          }
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .eenvoudig-second-block {
+
+    .offset-1 {
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+        }
+      }
+      .content-example{
+        flex-direction: column;
+
+        &__btn{
+          display: initial;
+          margin-top: 30px;
+
+          a{
+            transform: unset;
+            writing-mode: unset;
+          }
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+  /* ====== Third block ends ====== */
+  .portal-third-block{
+
+
+    .offset-1 {
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+        }
+      }
+      .content-example{
+        flex-direction: column;
+
+        &__btn{
+          display: initial;
+          margin-top: 30px;
+
+          a{
+            transform: unset;
+            writing-mode: unset;
+          }
+        }
+      }
+    }
+  }
+  /* ====== Third block ends ====== */
+  /* ====== Fourth block starts ====== */
+  .velen-fourth-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .offset-1{
+        margin: 0;
+      }
+      .content-logo{
+
+        &:nth-child(1){
+          padding: 0;
+
+          .content-logo__link{
+            padding: 27px;
+          }
+        }
+        &:nth-child(2){
+          margin: 0;
+        }
+        &:nth-child(3){}
+        &:nth-child(4){
+          padding: 0;
+        }
+        &:nth-child(5){
+          margin: 0;
+        }
+      }
+    }
+  }
+  /* ====== Fourth block ends ====== */
+}
+/* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+  /* ====== First block starts ====== */
+  .cases-first-block{
+
+    .offset-1{
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .content-example{
+        justify-content: center;
+
+        &__btn{
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .eenvoudig-second-block {
+
+    .offset-1 {
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .content-example{
+        justify-content: center;
+
+        &__btn{
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+  /* ====== Third block ends ====== */
+  .portal-third-block{
+
+
+    .offset-1 {
+      margin: 0;
+    }
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .content-dscrpt{
+
+        &__title{
+          text-align: center;
+        }
+        &__subtitle{
+          text-align: center;
+          padding: 0;
+        }
+        &__logo{
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .content-example{
+        justify-content: center;
+
+        &__btn{
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  /* ====== Third block ends ====== */
+  /* ====== Fourth block starts ====== */
+  .velen-fourth-block{
+
+    &__title{
+
+      p{
+        padding: 0 30px;
+        text-align: center;
+      }
+    }
+    &__content{
+
+      .offset-1{
+        margin: 0;
+      }
+      .content-logo{
+
+        &:nth-child(1){
+          padding: 0;
+
+          .content-logo__link{
+            padding: 27px;
+          }
+        }
+        &:nth-child(2){
+          margin: 0;
+        }
+        &:nth-child(3){}
+        &:nth-child(4){
+          padding: 0;
+        }
+        &:nth-child(5){
+          margin: 0;
+        }
+      }
+    }
+  }
+  /* ====== Fourth block ends ====== */
+}
+/* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  /* ====== First block starts ====== */
+  .cases-first-block{
+
+    &__content{
+
+      .content-dscrpt{
+
+        &__logo{
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+  /* ====== First block ends ====== */
+  /* ====== Second block starts ====== */
+  .eenvoudig-second-block {
+
+    &__content{
+
+      .content-dscrpt{
+
+        &__logo{
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+  /* ====== Second block ends ====== */
+  /* ====== Third block ends ====== */
+  .portal-third-block{
+
+    &__content{
+
+      .content-dscrpt{
+
+        &__logo{
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+  /* ====== Third block ends ====== */
+}
+/* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
+@media screen and (min-width: 1200px) and (max-width: 1312.98px){
+
+}
+/* ===== Resolution min-width - 1313 and max-width - 1920 ===== */
+@media screen and (min-width: 1313px) and (max-width: 1920px){
+
+}
+/* ===== Resolution min-width - 1920 ===== */
+@media screen and (min-width: 1921px) and (max-width: 2560px){
+
+}
