@@ -60,9 +60,7 @@
   /* ====== Third block starts ====== */
   .screenshots-third-block{
     margin-top: 50px;
-    background-image: -webkit-linear-gradient(360deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
-    background-image: -moz-linear-gradient(360deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
-    background-image: linear-gradient(360deg, rgb(240,240,240) 50%,rgb(254,254,254) 50%);
+
     &__title p {
       text-align: center;
       padding: 0;
@@ -615,5 +613,3 @@
     order:  unset;
   }
 }
-
-//@import "pricing_responsive";

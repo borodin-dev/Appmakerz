@@ -74,6 +74,10 @@
 
       &-left{
         margin-top: 30px;
+
+        .offset-1{
+          margin: unset;
+        }
         img{
           height: inherit;
         }
@@ -167,6 +171,9 @@
       &-left{
         margin-top: 70px;
 
+        .offset-1{
+          margin: unset;
+        }
         img{
           height: inherit;
         }
@@ -271,6 +278,9 @@
       &-left{
         margin-top: 70px;
 
+        .offset-1{
+          margin: unset;
+        }
         img{
           height: inherit;
         }
