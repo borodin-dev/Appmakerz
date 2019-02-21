@@ -12,13 +12,14 @@ mode: 'production',
   plugins: [
       new CleanWebpackPlugin(['dist']),
       new CopyWebpackPlugin([
-              { from: path.resolve(__dirname, './src/img'), to: path.resolve(__dirname, 'dist/img')}
+              { from: path.resolve(__dirname, 'src/img'), to: path.resolve(__dirname, 'dist/img')},
+              { from: path.resolve(__dirname, 'app/mail.php'), to: path.resolve(__dirname, 'dist')},
           ],
           {
               ignore: [
                   {glob:'svg/*'},
               ]
-          }
+          },
       )
   ],
 });

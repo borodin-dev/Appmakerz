@@ -1,8 +1,10 @@
 /* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
 @media screen and (min-width: 320px) and (max-width: 575.98px){
+  @include breadcrums-320;
   /* ====== First block starts ====== */
   .team-first-block{
     background-position: 40% 100%;
+
     &__title{
 
       p{
@@ -24,6 +26,7 @@
       }
       .team-first-block__left-blk{
         margin-top: 50px;
+
         h2{
           text-align: center;
         }
@@ -84,6 +87,7 @@
       }
       &-right{
         margin-top: 30px;
+
         .order-12{
           order: 12;
         }
@@ -94,12 +98,16 @@
     }
   }
   /* ====== Second block ends ====== */
+  @include enthousiast-320;
+  @include footer-320;
 }
 /* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+  @include breadcrums-576;
   /* ====== First block starts ====== */
   .team-first-block{
     background-position: 40% 100%;
+
     &__title{
 
       p{
@@ -120,6 +128,7 @@
       }
       .team-first-block__left-blk{
         margin-top: 50px;
+
         h2{
           text-align: center;
         }
@@ -191,14 +200,22 @@
     }
   }
   /* ====== Second block ends ====== */
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-576;
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  @include footer-576;
+  /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
 @media screen and (min-width: 768px) and (max-width: 991.98px){
   /* ====== First block starts ====== */
   .team-first-block{
     background-position: 40% 100%;
+
     &__title{
       margin: 0;
+
       p{
         padding: 0 30px;
         text-align: center;
@@ -224,6 +241,7 @@
       }
       .team-first-block__left-blk{
         margin-top: 50px;
+
         h2{
           text-align: center;
         }
@@ -255,6 +273,7 @@
         }
         .col-lg-6 {
           text-align: center;
+
           img {
             margin: 0;
           }
@@ -298,6 +317,12 @@
     }
   }
   /* ====== Second block ends ====== */
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-768;
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  @include footer-768;
+  /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -306,10 +331,10 @@
   }
   .team-first-block{
 
-
     &__content{
+
       .line-team-1{
-        background-image: url(/img/path_2_sm.png);
+        background-image: url(../img/path_2_sm.png);
         height: 70px;
         background-repeat: no-repeat;
         background-position: 45% 44%;
@@ -317,7 +342,7 @@
         margin-top: -24px;
       }
       .line-team-2{
-        background-image: url(/img/path_1_sm.png);
+        background-image: url(../img/path_1_sm.png);
         background-position: 46% 15.8%;
       }
       .team-first-block__left-blk{
@@ -328,6 +353,8 @@
       }
     }
   }
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-992;
 }
 /* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
 @media screen and (min-width: 1200px) and (max-width: 1312.98px){

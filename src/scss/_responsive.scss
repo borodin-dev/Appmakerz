@@ -81,18 +81,7 @@
   }
   /* ====== Third block ends ====== */
   /* ====== Fourth block starts ====== */
-  .intergratie-fourth-block{
-    margin-top: 50px;
-    &__title p {
-      text-align: center;
-      padding: 0;
-    }
-    &__content-line .brand-logo {
-      justify-content: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
+  @include intergratie-320;
   /* ====== Fourth block ends ====== */
   /* ====== Fifth block starts ====== */
   .functional-fifth-block{
@@ -128,56 +117,10 @@
   }
   /* ====== Fifth block ends ====== */
   /* ====== Sixth block starts ====== */
-  .enthousiast-sixth-block{
-    padding-top: 25px;
-
-    &__title {
-      align-items: center;
-      padding-bottom: 30px;
-
-      & h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 25px;
-      }
-      & h4 {
-        font-size: 1.2rem;
-        text-align: center;
-      }
-      &-buttons {
-        margin-top: 30px;
-      }
-    }
-  }
+  @include enthousiast-320;
   /* ====== Sixth block ends ====== */
   /* ====== Footer block starts ====== */
-  footer{
-    padding-top: 30px;
-
-    .footer-address{
-      text-align: center;
-
-      & h4,
-      & p{
-        text-align: center;
-      }
-      
-    }
-    .footer-info{
-      text-align: center;
-
-      & h3{
-        text-align: center;
-      }
-    }
-    .footer-terms{
-      text-align: center;
-
-      .order-to-show {
-        flex-direction: column;
-      }
-    }
-  }
+  @include footer-320;
   /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
@@ -263,18 +206,7 @@
   }
   /* ====== Third block ends ====== */
   /* ====== Fourth block starts ====== */
-  .intergratie-fourth-block{
-    margin-top: 50px;
-    &__title p {
-      text-align: center;
-      padding: 0;
-    }
-    &__content-line .brand-logo {
-      justify-content: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
+  @include intergratie-576;
   /* ====== Fourth block ends ====== */
   /* ====== Fifth block starts ====== */
   .functional-fifth-block{
@@ -310,56 +242,10 @@
   }
   /* ====== Fifth block ends ====== */
   /* ====== Sixth block starts ====== */
-  .enthousiast-sixth-block{
-    padding-top: 25px;
-
-    &__title {
-      align-items: center;
-      padding-bottom: 30px;
-
-      & h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 25px;
-      }
-      & h4 {
-        font-size: 1.2rem;
-        text-align: center;
-      }
-      &-buttons {
-        margin-top: 30px;
-      }
-    }
-  }
+  @include enthousiast-576;
   /* ====== Sixth block ends ====== */
   /* ====== Footer block starts ====== */
-  footer{
-    padding-top: 30px;
-
-    .footer-address{
-      text-align: center;
-
-      & h4,
-      & p{
-        text-align: center;
-      }
-
-    }
-    .footer-info{
-      text-align: center;
-
-      & h3{
-        text-align: center;
-      }
-    }
-    .footer-terms{
-      text-align: center;
-
-      .order-to-show {
-        flex-direction: column;
-      }
-    }
-  }
+  @include footer-576;
   /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
@@ -368,8 +254,8 @@
   .navbar{
 
     &-brand{
-    margin: 0;
-  }
+      margin: 0;
+    }
     .vertical-divider{
       display: none;
     }
@@ -429,24 +315,11 @@
       text-align: center;
       padding: 0;
     }
-    &__slider{
-
-    }
+    &__slider{ }
   }
   /* ====== Third block ends ====== */
   /* ====== Fourth block starts ====== */
-  .intergratie-fourth-block{
-    margin-top: 50px;
-    &__title p {
-      text-align: center;
-      padding: 0;
-    }
-    &__content-line .brand-logo {
-      justify-content: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
+  @include intergratie-768;
   /* ====== Fourth block ends ====== */
   /* ====== Fifth block starts ====== */
   .functional-fifth-block{
@@ -482,59 +355,10 @@
   }
   /* ====== Fifth block ends ====== */
   /* ====== Sixth block starts ====== */
-  .enthousiast-sixth-block{
-    padding-top: 25px;
-
-    &__title {
-      align-items: center;
-      padding-bottom: 30px;
-
-      & h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        margin-bottom: 25px;
-      }
-      & h4 {
-        font-size: 1.2rem;
-        text-align: center;
-      }
-      &-buttons {
-        margin-top: 30px;
-      }
-    }
-    .col-lg-7{
-      text-align: center;
-    }
-  }
+  @include enthousiast-768;
   /* ====== Sixth block ends ====== */
   /* ====== Footer block starts ====== */
-  footer{
-    padding-top: 30px;
-
-    .footer-address{
-      text-align: center;
-
-      & h4,
-      & p{
-        text-align: center;
-      }
-
-    }
-    .footer-info{
-      text-align: center;
-
-      & h3{
-        text-align: center;
-      }
-    }
-    .footer-terms{
-      text-align: center;
-
-      .order-to-show {
-        flex-direction: column;
-      }
-    }
-  }
+  @include footer-768;
   /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
@@ -580,12 +404,7 @@
   }
   /* ====== Fifth block ends ====== */
   /* ====== Sixth block starts ====== */
-  .enthousiast-sixth-block {
-
-    &__title-buttons {
-      margin-top: 30px;
-    }
-  }
+  @include enthousiast-992;
   .order-last{
     order:  unset;
   }
@@ -595,6 +414,7 @@
 @media screen and (min-width: 1200px) and (max-width: 1312.98px){
   .navbar {
     padding: 0;
+
     & .form-inline input#inputSearch {
       width: 100px;
     }

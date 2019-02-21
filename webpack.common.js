@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 // const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const CopyPlugin = require('copy-webpack-plugin');
 
 //module settings
 module.exports = {
@@ -32,13 +33,21 @@ module.exports = {
 
     module: {
         rules: [
+            //php
+            {
+                test: /\.php$/,
+                loaders: [
+                    'html-minify',
+                    'php-loader'
+                ]
+            },
             //scss
             {
                 test: /\.scss$/,
                 use: ExtractTextPlugin.extract({
                     use: [
                         {
-                            loader: 'css-loader',
+                            loader: 'css-loader?url=false',
                             options: {sourceMap: true}
                         },
                         {
@@ -55,16 +64,17 @@ module.exports = {
             },
             //image
             {
-                test: /\.(jpe?g|png|gif|svg)$/,
-                loaders: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name].[ext]'
-                        }
-                    },
-                    'img-loader',
-                ],
+                test: /\.(jpe?g|png|gif)$/,
+                use: {
+                    loader: 'url-loader',
+                    options: {
+                        limit: 8000,
+                        fallback: 'file-loader',
+                        name: '[name].[ext]',
+                        publicPath: '../img/',
+                        outputPath: './img/'
+                    }
+                }
             },
             //fonts
             {
@@ -114,5 +124,13 @@ module.exports = {
             filename: 'kennisplatform_crow.html',
             template: 'app/kennisplatform_crow.html'
         }),
+        new HtmlWebpackPlugin({
+            filename: "partners.html",
+            template: "app/partners.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            template: 'app/contact.html'
+        })
     ],
 };

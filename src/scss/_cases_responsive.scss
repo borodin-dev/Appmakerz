@@ -1,5 +1,6 @@
 /* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
 @media screen and (min-width: 320px) and (max-width: 575.98px){
+  @include breadcrums-320;
   /* ====== First block starts ====== */
   .cases-first-block{
 
@@ -38,6 +39,7 @@
           a{
             transform: unset;
             writing-mode: unset;
+            padding: 5.5px 20px;
           }
         }
       }
@@ -82,6 +84,7 @@
           a{
             transform: unset;
             writing-mode: unset;
+            padding: 5.5px 20px;
           }
         }
       }
@@ -90,7 +93,6 @@
   /* ====== Second block ends ====== */
   /* ====== Third block ends ====== */
   .portal-third-block{
-
 
     .offset-1 {
       margin: 0;
@@ -127,6 +129,7 @@
           a{
             transform: unset;
             writing-mode: unset;
+            padding: 5.5px 20px;
           }
         }
       }
@@ -148,33 +151,38 @@
       .offset-1{
         margin: 0;
       }
+      .content-sidebar{
+        padding: 0 30px 50px;
+
+        &__title{
+          text-align: center;
+        }
+        .branche-control{
+          margin: 0 0 35px;
+        }
+      }
       .content-logo{
+        margin-top: 20px;
 
-        &:nth-child(1){
-          padding: 0;
+        &__container{
+          margin-left: unset;
+          display: flex;
+          flex-wrap: wrap;
 
-          .content-logo__link{
-            padding: 27px;
+          .container__img{
+            margin: 10px auto;
           }
-        }
-        &:nth-child(2){
-          margin: 0;
-        }
-        &:nth-child(3){}
-        &:nth-child(4){
-          padding: 0;
-        }
-        &:nth-child(5){
-          margin: 0;
         }
       }
     }
   }
   /* ====== Fourth block ends ====== */
-
+  @include enthousiast-320;
+  @include footer-320;
 }
 /* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+  @include breadcrums-576;
   /* ====== First block starts ====== */
   .cases-first-block{
 
@@ -213,6 +221,7 @@
           a{
             transform: unset;
             writing-mode: unset;
+            padding: 5.5px 20px;
           }
         }
       }
@@ -257,6 +266,7 @@
           a{
             transform: unset;
             writing-mode: unset;
+            padding: 5.5px 20px;
           }
         }
       }
@@ -265,7 +275,6 @@
   /* ====== Second block ends ====== */
   /* ====== Third block ends ====== */
   .portal-third-block{
-
 
     .offset-1 {
       margin: 0;
@@ -302,6 +311,7 @@
           a{
             transform: unset;
             writing-mode: unset;
+            padding: 5.5px 20px;
           }
         }
       }
@@ -323,29 +333,38 @@
       .offset-1{
         margin: 0;
       }
+      .content-sidebar{
+        padding: 0 30px 50px;
+
+        &__title{
+          text-align: center;
+        }
+        .branche-control{
+          margin: 0 0 35px;
+        }
+      }
       .content-logo{
+        margin-top: 20px;
 
-        &:nth-child(1){
-          padding: 0;
+        &__container{
+          margin-left: unset;
+          display: flex;
+          flex-wrap: wrap;
 
-          .content-logo__link{
-            padding: 27px;
+          .container__img{
+            margin: 10px auto;
           }
-        }
-        &:nth-child(2){
-          margin: 0;
-        }
-        &:nth-child(3){}
-        &:nth-child(4){
-          padding: 0;
-        }
-        &:nth-child(5){
-          margin: 0;
         }
       }
     }
   }
   /* ====== Fourth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-576;
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  @include footer-576;
+  /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
 @media screen and (min-width: 768px) and (max-width: 991.98px){
@@ -430,7 +449,6 @@
   /* ====== Third block ends ====== */
   .portal-third-block{
 
-
     .offset-1 {
       margin: 0;
     }
@@ -482,29 +500,38 @@
       .offset-1{
         margin: 0;
       }
+      .content-sidebar{
+        padding: 0 30px 50px;
+
+        &__title{
+          text-align: center;
+        }
+        .branche-control{
+          margin: 0 0 35px;
+        }
+      }
       .content-logo{
+        margin-top: 20px;
 
-        &:nth-child(1){
-          padding: 0;
+        &__container{
+          margin-left: unset;
+          display: flex;
+          flex-wrap: wrap;
 
-          .content-logo__link{
-            padding: 27px;
+          .container__img{
+            margin: 10px auto;
           }
-        }
-        &:nth-child(2){
-          margin: 0;
-        }
-        &:nth-child(3){}
-        &:nth-child(4){
-          padding: 0;
-        }
-        &:nth-child(5){
-          margin: 0;
         }
       }
     }
   }
   /* ====== Fourth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-768;
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  @include footer-768;
+  /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -550,6 +577,24 @@
     }
   }
   /* ====== Third block ends ====== */
+  /* ====== Fourth block starts ====== */
+  .velen-fourth-block{
+
+    &__content{
+
+      .content-sidebar{
+        padding: 0 15px;
+
+        .branche-control{
+          width: 210px;
+          margin: 0 0 35px;
+        }
+      }
+    }
+  }
+  /* ====== Fourth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-992;
 }
 /* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
 @media screen and (min-width: 1200px) and (max-width: 1312.98px){

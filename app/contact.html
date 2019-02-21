@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Contact Page">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <title>Contact</title>
+</head>
+<body>
+    <div id="contact">
+        <!-- Header(navbar) Block  -->
+        <nav class="navbar navbar-expand-lg navbar-custom-bg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="img/logo_wit_antractiet.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0 justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="platform.html">Platform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Voorbeeld apps</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cases.html">Cases </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="team.html">Team & Aanpak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                    <div class="vertical-divider"></div>
+                    <form class="form-inline my-2 my-lg-0">
+                        <label for="inputSearch"></label>
+                        <input id="inputSearch" class="form-control mr-sm-2 input-search" type="search" name="search" rel="search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Breadcrumbs -->
+        <nav aria-label="breadcrumb">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                </ol>
+            </div>
+        </nav>
+        <!--  First Block - Contact -->
+        <div class="contact-first-block">
+            <div class="container">
+                <div class="contact-first-block__title">
+                    <h4>Contact</h4>
+                    <h2>Wij helpen je graag!</h2>
+                    <p>
+                        Etiam accumsan fermentum facilisis. Vestibulum ipsum dui, lacinia nec dignissim quis, dictum rhoncus metus.
+                        Nullam a enim id odio bibendum commodo convallis nec libero. Integer convallis, purus vel commodo egestas,
+                        justo mi ullamcorper sapien, et suscipit risus. Etiam accumsan fermentum facilisis. Vestibulum ipsum dui.
+                    </p>
+                </div>
+                <div class="contact-first-block__content">
+                    <div class="row">
+                        <div class="offset-1 col-lg-6 cfb-content-form">
+                            <form id="sendForm" role="form">
+                                <div class="row form-group">
+                                    <div class="col">
+                                        <label for="voornaam">Voornaam *</label>
+                                        <input type="text" class="form-control" id="voornaam" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="achternaam">Achternaam *</label>
+                                        <input type="text" class="form-control" id="achternaam" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zakelijkeEmail">Zakelijke e-mail *</label>
+                                    <input type="email" class="form-control" id="zakelijkeEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefoonnummer">Telefoonnummer *</label>
+                                    <input type="tel" class="form-control" id="telefoonnummer" required>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-lg-9">
+                                        <label for="bedrijfsnaam">Bedrijfsnaam *</label>
+                                        <input type="text" class="form-control" id="bedrijfsnaam" required>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <label for="medewerkers">Medewerkers</label>
+                                        <select id="medewerkers" class="form-select">
+                                            <option value="05">0 - 5</option>
+                                            <option value="510">5 - 10</option>
+                                            <option value="1015">10 - 15</option>
+                                            <option value="1520">15 - 20</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="jouwBericht">Jouw bericht *</label>
+                                    <textarea name="Jouw Bericht" id="jouwBericht" cols="66" rows="13"></textarea>
+                                </div>
+                                <div class="form-group form-checkbox">
+                                    <label for="inplannen">
+                                    <input type="checkbox" id="inplannen" class="checkbox-custom">Ik wil graag een afspraak inplannen</label>
+                                </div>
+                                <div class="form-group form-checkbox">
+                                    <label for="voorwaarden">
+                                    <input type="checkbox" id="voorwaarden" class="checkbox-custom">Ik ga akkoord met de algemene en privacy voorwaarden</label>
+                                </div>
+                                <div class="form-group form-btn">
+                                    <button class="verzenden-btn" id="sendFormBtn">Verzenden</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4 cfb-content-sidebar">
+                            <div class="cfb-content-sidebar__contacts">
+                                <h2>Appmakerz</h2>
+                                <p>Raadhuisplein 20, 9203 EB Drachten</p>
+                                <div class="contacts__email">
+                                    <span class="title-letter">E&nbsp;</span>
+                                    <a href="mailto:info@appmakerz.com" class="email">info@appmakerz.com</a>
+                                </div>
+                                <div class="contacts__tel">
+                                    <span class="title-letter">T&nbsp;</span>
+                                    <span class="tel">085 - 301 28 51</span>
+                                </div>
+                            </div>
+                            <div class="cfb-content-sidebar__list">
+                                <p>Samen aan de slag</p>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                    <li>Etiam facilisis nibh vitae quam interdum iaculis. In eget maximus libero.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                    <li>Etiam facilisis nibh vitae quam interdum iaculis. In eget maximus libero.</li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                </ul>
+                                <div class="list-img">
+                                    <img src="img/app_cube.png" alt="App Cube">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sixth Block - Enthousiast -->
+        <div class="enthousiast-sixth-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="enthousiast-sixth-block__title">
+                            <h2>Enthousiast geworden?</h2>
+                            <h4>Wij helpen u graag!</h4>
+                            <div class="enthousiast-sixth-block__title-buttons">
+                                <button class="contact-btn anchor-link" disabled>Contact</button>
+                                <button class="pricing-btn" onclick="location.href='pricing.html'">Pricing</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="img/witte_lijnen_graphic.png" alt="Schema">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Block -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="offset-1 col-lg-3 footer-menu">
+                        <h5>Sitemap</h5>
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-lg-6">
+                                <a href="platform.html">Platform</a>
+                                <a href="#">Voorbeeld apps</a>
+                                <a href="cases.html">Cases</a>
+                            </div>
+                            <div class="col-6 col-sm-6 col-lg-6">
+                                <a href="team.html">Team & Aanpak</a>
+                                <a href="pricing.html">Pricing</a>
+                                <a href="#contact" class="anchor-link">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 footer-address">
+                        <h4>Appmakerz</h4>
+                        <p>Raadhuisplein 20, 9203 EB Drachten</p>
+                        <div class="footer-address__email">
+                            <span class="title-letter">E</span>
+                            <a href="mailto:info@appmakerz.com" class="email">info@appmakerz.com</a>
+                        </div>
+                        <div class="footer-address__tel">
+                            <span class="title-letter">T</span>
+                            <span class="tel">085-301 28 51</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 footer-info">
+                        <h3>Wij ontwikkelen eenvoudige en modulaire business oplossingen voor en met u.</h3>
+                        <a class="anchor-link" href="#index"><img class="img-fluid" src="img/logo_antractiet.png" alt="Footer Logo"></a>
+                    </div>
+                </div>
+                <div class="footer-terms">
+                    <div class="offset-1 col-lg-7 order-to-show">
+                        <div class="order-last">
+                            <span>&#169; Copyright <script>document.write(new Date().getFullYear())</script>. All rights reserved.</span>
+                        </div>
+                        <div>
+                            <a href="#">Terms & conditions</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blue-footer-line"></div>
+        </footer>
+    </div>
+</body>
+</html>

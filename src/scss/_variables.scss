@@ -1,3 +1,5 @@
+@import "fonts";
+
 /***** COLORS *****/
 $primary_color: #808283;
 $primary_bg_color: #ffffff;
@@ -5,3 +7,517 @@ $buttons_color: #ffffff;
 
 /***** FONTS *****/
 $primary_size: 16px;
+$OpenSansRegular: OpenSans-Regular;
+$OpenSansLight: OpenSans-Light;
+$OpenSansBold: OpenSans-Bold;
+$OpenSansSemiBold: OpenSans-SemiBold;
+$OpenSansExtraBold: OpenSans-Regular;
+$OpenSansItalic: OpenSans-Italic;
+$OpenSansSemiBoldItalic: OpenSans-SemiBoldItalic;
+
+/***** H4(title), H2(subtitle), P(description) styles*****/
+@mixin h4-style {
+  font: 1.1875rem $OpenSansBold;
+  color: rgb(45, 175, 229);
+  line-height: 1.2;
+}
+@mixin h2-style {
+  font: 2.125rem $OpenSansRegular;
+  color: rgb(45, 175, 229);
+  line-height: 1.2;
+}
+@mixin p-style {
+  font: 1rem $OpenSansRegular;
+  color: rgb(128, 130, 131);
+  line-height: 2.188;
+}
+
+@mixin breadcrums-320{
+  /* ====== Breadcrumbs block starts ====== */
+  nav[aria-label=breadcrumb]{
+
+    .breadcrumb{
+      margin: 0;
+    }
+  }
+  /* ====== Breadcrumbs block ends ====== */
+}
+@mixin breadcrums-576{
+  /* ====== Breadcrumbs block starts ====== */
+  nav[aria-label=breadcrumb]{
+
+    .breadcrumb{
+      margin: 0;
+    }
+  }
+  /* ====== Breadcrumbs block ends ====== */
+}
+@mixin breadcrums-768{
+  /* ====== Breadcrumbs block starts ====== */
+  nav[aria-label=breadcrumb]{
+
+    .breadcrumb{
+      margin: 0;
+    }
+  }
+  /* ====== Breadcrumbs block ends ====== */
+}
+
+/***** Intergratie, Enthousiast and Footer styles *****/
+@mixin intergratie{
+  .intergratie-fourth-block{
+    padding: 80px 0;
+
+    &__title{
+
+      h4{
+        @include h4-style;
+        text-align: center;
+      }
+      h2{
+        @include h2-style;
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      p{
+        @include p-style;
+        text-align: left;
+        padding: 0 150px;
+      }
+    }
+    &__content{
+
+      &-logo{
+        margin-top: 45px;
+        text-align: center;
+      }
+      &-line{
+        text-align: center;
+
+        .brand-logo{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          width: 900px;
+          margin: 0 auto;
+
+          .flex-item{
+            width: auto;
+            margin: 15px 25px 0;
+          }
+        }
+      }
+    }
+  }
+}
+@mixin intergratie-320{
+  .intergratie-fourth-block{
+    padding-top: 50px;
+
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__content-line .brand-logo {
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+
+      .flex-item{
+        margin: 25px 25px 0;
+      }
+    }
+  }
+}
+@mixin intergratie-576{
+  .intergratie-fourth-block{
+    padding-top: 50px;
+
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__content-line .brand-logo {
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+
+      .flex-item{
+        margin: 25px 25px 0;
+      }
+    }
+  }
+}
+@mixin intergratie-768{
+  .intergratie-fourth-block{
+    padding-top: 50px;
+
+    &__title p {
+      text-align: center;
+      padding: 0;
+    }
+    &__content-line .brand-logo {
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@mixin enthousiast {
+  .enthousiast-sixth-block {
+    background-image: -moz-linear-gradient(-93.071deg, rgb(129, 207, 244) 0%, rgb(0, 147, 198) 53%, rgb(0, 110, 182) 100%);
+    background-image: -webkit-linear-gradient(-93.071deg, rgb(129, 207, 244) 0%, rgb(0, 147, 198) 53%, rgb(0, 110, 182) 100%);
+    background-image: linear-gradient(-93.071deg, rgb(129, 207, 244) 0%, rgb(0, 147, 198) 53%, rgb(0, 110, 182) 100%);
+    padding-top: 40px;
+
+    &__title {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        font: 2.125rem $OpenSansBold;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 33px;
+      }
+
+      h4 {
+        font: 1.5rem $OpenSansRegular;
+        color: rgb(255, 255, 255);
+        line-height: 1.2;
+        text-align: left;
+      }
+
+      &-buttons {
+        margin-top: 50px;
+
+        .contact-btn {
+          border: none;
+          border-radius: 15px;
+          background-color: rgb(233, 90, 12);
+          width: 133px;
+          height: 31px;
+          font: 0.8125rem $OpenSansSemiBold;
+          border: none;
+          color: $buttons_color;
+          cursor: pointer;
+          margin-right: 10px;
+          padding: 5px;
+          -webkit-transition: 0.2s ease-out;
+          -moz-transition: 0.2s ease-out;
+          -o-transition: 0.2s ease-out;
+          transition: 0.2s ease-out;
+
+          &:hover {
+            background-color: rgba(233, 90, 12, 0.8);
+          }
+        }
+
+        .pricing-btn {
+          border-width: 1px;
+          border-color: rgb(255, 255, 255);
+          border-style: solid;
+          border-radius: 15px;
+          width: 111px;
+          height: 31px;
+          color: $buttons_color;
+          background-color: transparent;
+          font: 0.8125rem $OpenSansSemiBold;
+          cursor: pointer;
+          margin-left: 6px;
+          padding: 5px;
+          -webkit-transition: 0.2s ease-out;
+          -moz-transition: 0.2s ease-out;
+          -o-transition: 0.2s ease-out;
+          transition: 0.2s ease-out;
+
+          &:hover {
+            background-color: rgba(214, 214, 214, 0.5);
+          }
+        }
+      }
+    }
+  }
+}
+@mixin enthousiast-320{
+  .enthousiast-sixth-block {
+    padding-top: 25px;
+
+    &__title {
+      align-items: center;
+      padding-bottom: 30px;
+
+      & h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+
+      & h4 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+
+      &-buttons {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@mixin enthousiast-576{
+  .enthousiast-sixth-block{
+    padding-top: 25px;
+
+    &__title {
+      align-items: center;
+      padding-bottom: 30px;
+
+      & h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      & h4 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      &-buttons {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@mixin enthousiast-768{
+  .enthousiast-sixth-block{
+    padding-top: 25px;
+
+    &__title {
+      align-items: center;
+      padding-bottom: 30px;
+
+      & h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      & h4 {
+        font-size: 1.2rem;
+        text-align: center;
+      }
+      &-buttons {
+        margin-top: 30px;
+      }
+    }
+    .col-lg-7{
+      text-align: center;
+    }
+  }
+}
+@mixin enthousiast-992{
+  .enthousiast-sixth-block {
+
+    &__title-buttons {
+      margin-top: 30px;
+    }
+  }
+}
+
+@mixin footer{
+  footer{
+    padding-top: 50px;
+    background-color: #f0f0f0;
+
+    .footer-menu{
+
+      h5{
+        font: 0.75rem $OpenSansBold;
+        color: rgb(128, 130, 131);
+        line-height: 2.5;
+        text-align: left;
+      }
+      .col-lg-6 {
+
+        a{
+          display: block;
+          font: 0.75rem $OpenSansRegular;
+          color: rgb(128, 130, 131);
+          line-height: 2.583;
+          text-align: left;
+        }
+      }
+    }
+    .footer-address{
+
+      h4{
+        font: 1rem $OpenSansBold;
+        color: rgb(128, 130, 131);
+        line-height: 1.875;
+        text-align: left;
+      }
+      p {
+        font: 0.75rem $OpenSansRegular;
+        color: rgb(128, 130, 131);
+        line-height: 2.5;
+        text-align: left;
+        margin: 0;
+      }
+      &__email{
+        .title-letter{
+          font: 0.75rem $OpenSansBold;
+          color: rgb(128, 130, 131);
+          line-height: 2.5;
+          text-align: left;
+          margin-right: 17px;
+        }
+        .email{
+          font: 0.75rem $OpenSansItalic;
+          color: rgb(128, 130, 131);
+          line-height: 2.5;
+          text-align: left;
+        }
+      }
+      &__tel{
+        .title-letter{
+          font: 0.75rem $OpenSansBold;
+          color: rgb(128, 130, 131);
+          line-height: 2.5;
+          text-align: left;
+          margin-right: 17px;
+        }
+        .tel{
+          font: 0.75rem $OpenSansItalic;
+          color: rgb(128, 130, 131);
+          line-height: 2.5;
+          text-align: left;
+        }
+      }
+    }
+    .footer-info{
+      margin-top: 15px;
+      text-align: right;
+
+      h3{
+        font: 1rem $OpenSansRegular;
+        color: rgb(45, 175, 229);
+        line-height: 1.75;
+        text-align: right;
+        margin-bottom: 20px;
+      }
+      img{
+        text-align: right;
+      }
+    }
+    .footer-terms{
+      display: flex;
+      margin: 40px 0 20px;
+
+      .order-to-show{
+        padding: 0;
+        display: flex;
+
+        span, a{
+          font: 0.75rem $OpenSansRegular;
+          color: rgb(193, 193, 193);
+          line-height: 2.583;
+          text-align: left;
+          margin: 0 22px 0 0;
+        }
+      }
+    }
+    .blue-footer-line {
+      background-color: rgb(45, 175, 229);
+      height: 10px;
+    }
+  }
+}
+@mixin footer-320{
+  footer{
+    padding-top: 30px;
+
+    .footer-address{
+      text-align: center;
+
+      & h4,
+      & p{
+        text-align: center;
+      }
+
+    }
+    .footer-info{
+      text-align: center;
+
+      & h3{
+        text-align: center;
+      }
+    }
+    .footer-terms{
+      text-align: center;
+
+      .order-to-show {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@mixin footer-576{
+  footer{
+    padding-top: 30px;
+
+    .footer-address{
+      text-align: center;
+
+      & h4,
+      & p{
+        text-align: center;
+      }
+
+    }
+    .footer-info{
+      text-align: center;
+
+      & h3{
+        text-align: center;
+      }
+    }
+    .footer-terms{
+      text-align: center;
+
+      .order-to-show {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@mixin footer-768{
+  footer{
+    padding-top: 30px;
+
+    .footer-address{
+      text-align: center;
+
+      & h4,
+      & p{
+        text-align: center;
+      }
+    }
+    .footer-info{
+      text-align: center;
+
+      & h3{
+        text-align: center;
+      }
+    }
+    .footer-terms{
+      text-align: center;
+
+      .order-to-show {
+        flex-direction: column;
+      }
+    }
+  }
+}

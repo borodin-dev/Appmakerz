@@ -7,22 +7,16 @@
     margin-bottom: 70px;
 
     h4 {
-      font: 1.1875rem OpenSans-Bold;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h4-style;
       text-align: center;
     }
     h2 {
-      font: 2.125rem OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h2-style;
       text-align: center;
       margin-bottom: 35px;
     }
     p {
-      font: 1rem OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.188;
+      @include p-style;
       text-align: left;
       padding: 0 130px;
     }
@@ -30,7 +24,7 @@
   &__content{
 
     .line-team-1{
-      background-image: url(/img/path_2.png);
+      background-image: url(../img/path_2.png);
       height: 45px;
       background-repeat: no-repeat;
       background-position: 44.8% 14.8%;
@@ -43,14 +37,16 @@
       }
     }
     .line-team-2{
-      background-image: url(/img/path_1.png);
+      background-image: url(../img/path_1.png);
       height: 135px;
       background-repeat: no-repeat;
       background-position: 41.3% 15.8%;
     }
     .cross-device{
       margin-top: -80px;
+
       .team-first-block__left-blk{
+
         p{
           padding-right: 70px;
         }
@@ -63,9 +59,7 @@
       margin-top: 90px;
 
       h2 {
-        font: 2.125rem OpenSans-Regular;
-        color: rgb(45, 175, 229);
-        line-height: 1.2;
+        @include h2-style;
         text-align: left;
         margin-bottom: 50px;
       }
@@ -80,9 +74,7 @@
       margin: 90px 0 0 50px;
 
       h2 {
-        font: 2.125rem OpenSans-Regular;
-        color: rgb(45, 175, 229);
-        line-height: 1.2;
+        @include h2-style;
         text-align: left;
         margin-bottom: 50px;
       }
@@ -102,29 +94,23 @@
 /* ====== Second block starts ====== */
 .aanpak-second-block{
   padding: 110px 0 130px;
-  background-image: url('/img/Oval.png');
+  background-image: url('../img/Oval.png');
   background-position: center bottom;
   background-size: cover;
 
   &__title{
 
     h4 {
-      font: 1.1875rem OpenSans-Bold;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h4-style;
       text-align: center;
     }
     h2 {
-      font: 2.125rem OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h2-style;
       text-align: center;
       margin-bottom: 35px;
     }
     p {
-      font: 1rem OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.188;
+      @include p-style;
       text-align: left;
       padding: 0 130px;
       margin: 0 0 20px;
@@ -162,17 +148,17 @@
       display: flex;
       flex-flow: column;
       justify-content: center;
+
       h4{
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
-          text-align: center;
+        @include h4-style;
+        text-align: center;
       }
       p{
-          font: 1.125rem OpenSans-Regular;
-          color: rgb(128, 130, 131);
-          line-height: 1.8;
-          text-align: center;
+        font: 1.125rem OpenSans-Regular;
+        color: rgb(128, 130, 131);
+        line-height: 1.8;
+        text-align: center;
+
         a{
           color: #2dafe5;
         }
@@ -181,3 +167,5 @@
   }
 }
 /* ====== Second block ends ====== */
+@include enthousiast;
+@include footer;

@@ -1,5 +1,6 @@
 /* ===== Resolution min-width - 320 and max-width - 575.98 ===== */
 @media screen and (min-width: 320px) and (max-width: 575.98px){
+  @include breadcrums-320;
   /* ====== First block starts ====== */
   .platform-first-block {
 
@@ -24,16 +25,10 @@
         margin: unset;
 
         h2 {
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
           text-align: center;
           margin-bottom: 50px;
         }
         p{
-          font: 0.875rem OpenSans-Regular;
-          color: #808283;
-          line-height: 2;
           padding: 0 10px;
         }
         p:last-child{
@@ -44,30 +39,111 @@
         margin-top: 45px;
 
         h2 {
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
           text-align: center;
           margin-bottom: 50px;
         }
         p{
-          font: 0.875rem OpenSans-Regular;
-          color: #808283;
-          line-height: 2;
           padding: 0 10px;
         }
       }
     }
   }
   /* ====== First block ends ====== */
-  /* ====== Fourth block starts ====== */
-  .intergratie-fourth-block{
-    margin: 80px 0;
+  /* ====== Second block starts ====== */
+  .multi-second-block{
+
+    &__title{
+      
+      h2 {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      p{
+        padding: 0 10px;
+        text-align: justify;
+      }
+    }
+    &__content{
+
+      .msb-content__left {
+
+        .order-12{
+          order: 12;
+        }
+        .left-img{
+          text-align: center;
+        }
+        .left-content {
+          padding: 0;
+
+          &__title {
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+      .msb-content__right{
+
+        .right-img{
+          margin-top: 0;
+          text-align: center;
+
+          img{
+            content: url("../img/macbook_multi.png");
+          }
+        }
+        .right-content{
+          padding: 0;
+
+          &__title{
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+      .msb-content__left-iPad{
+        margin: 0;
+
+        .order-last{
+          order: 12;
+        }
+        .left-iPad-img{
+          text-align: center;
+          margin: 0;
+          
+          img{
+            text-align: center;
+            content: url("../img/iPad_multi.png");
+          }
+        }
+        .left-iPad-content{
+          padding: 0;
+          margin: 30px 0 0;
+
+          &__title{
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+    }
   }
+  /* ====== Second block ends ====== */
+  /* ====== Fourth block starts ====== */
+  @include intergratie-320;
   /* ====== Fourth block ends ====== */
+  @include enthousiast-320;
+  @include footer-320;
 }
 /* ===== Resolution min-width - 576 and max-width - 767.98 ===== */
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
+  @include breadcrums-576;
   /* ====== First block starts ====== */
   .platform-first-block {
 
@@ -91,16 +167,10 @@
         margin: unset;
 
         h2 {
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
           text-align: center;
           margin-bottom: 50px;
         }
         p{
-          font: 0.875rem OpenSans-Regular;
-          color: #808283;
-          line-height: 2;
           padding: 0 10px;
         }
         p:last-child{
@@ -111,27 +181,111 @@
         margin-top: 45px;
 
         h2 {
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
           text-align: center;
           margin-bottom: 50px;
         }
         p{
-          font: 0.875rem OpenSans-Regular;
-          color: #808283;
-          line-height: 2;
           padding: 0 10px;
         }
       }
     }
   }
   /* ====== First block ends ====== */
-  /* ====== Fourth block starts ====== */
-  .intergratie-fourth-block{
-    margin: 80px 0;
+  /* ====== Second block starts ====== */
+  .multi-second-block{
+
+    &__title{
+
+      h2 {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      p{
+        padding: 0 10px;
+        text-align: justify;
+      }
+    }
+    &__content{
+
+      .msb-content__left {
+
+        .order-12{
+          order: 12;
+        }
+        .left-img{
+          text-align: center;
+        }
+        .left-content {
+          padding: 0;
+
+          &__title {
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+      .msb-content__right{
+
+        .right-img{
+          margin-top: 0;
+          text-align: center;
+
+          img{
+            content: url("../img/macbook_multi.png");
+          }
+        }
+        .right-content{
+          padding: 0;
+
+          &__title{
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+      .msb-content__left-iPad{
+        margin: 0;
+
+        .order-last{
+          order: 12;
+        }
+        .left-iPad-img{
+          text-align: center;
+          margin: 0;
+
+          img{
+            text-align: center;
+            content: url("../img/iPad_multi.png");
+          }
+        }
+        .left-iPad-content{
+          padding: 0;
+          margin: 30px 0 0;
+
+          &__title{
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+    }
   }
+  /* ====== Second block ends ====== */
+  /* ====== Fourth block starts ====== */
+  @include intergratie-576;
   /* ====== Fourth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-576;
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  @include footer-576;
+  /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 768 and max-width - 991.98 ===== */
 @media screen and (min-width: 768px) and (max-width: 991.98px){
@@ -161,16 +315,10 @@
         margin: unset;
 
         h2 {
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
           text-align: center;
           margin-bottom: 50px;
         }
         p{
-          font: 0.875rem OpenSans-Regular;
-          color: #808283;
-          line-height: 2;
           padding: 0 10px;
         }
         p:last-child{
@@ -181,27 +329,111 @@
         margin-top: 45px;
 
         h2 {
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
           text-align: center;
           margin-bottom: 50px;
         }
         p{
-          font: 0.875rem OpenSans-Regular;
-          color: #808283;
-          line-height: 2;
           padding: 0 10px;
         }
       }
     }
   }
   /* ====== First block ends ====== */
-  /* ====== Fourth block starts ====== */
-  .intergratie-fourth-block{
-    margin: 80px 0;
+  /* ====== Second block starts ====== */
+  .multi-second-block{
+
+    &__title{
+
+      h2 {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      p{
+        padding: 0 10px;
+        text-align: justify;
+      }
+    }
+    &__content{
+
+      .msb-content__left {
+
+        .order-12{
+          order: 12;
+        }
+        .left-img{
+          text-align: center;
+        }
+        .left-content {
+          padding: 0;
+
+          &__title {
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+      .msb-content__right{
+
+        .right-img{
+          margin-top: 0;
+          text-align: center;
+
+          img{
+            content: url("../img/macbook_multi.png");
+          }
+        }
+        .right-content{
+          padding: 0;
+
+          &__title{
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+      .msb-content__left-iPad{
+        margin: 0;
+
+        .order-last{
+          order: 12;
+        }
+        .left-iPad-img{
+          text-align: center;
+          margin: 0;
+
+          img{
+            text-align: center;
+            content: url("../img/iPad_multi.png");
+          }
+        }
+        .left-iPad-content{
+          padding: 0;
+          margin: 30px 0 0;
+
+          &__title{
+            text-align: center;
+          }
+          img{
+            display: none;
+          }
+        }
+      }
+    }
   }
+  /* ====== Second block ends ====== */
+  /* ====== Fourth block starts ====== */
+  @include intergratie-768;
   /* ====== Fourth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-768;
+  /* ====== Sixth block ends ====== */
+  /* ====== Footer block starts ====== */
+  @include footer-768;
+  /* ====== Footer block ends ====== */
 }
 /* ===== Resolution min-width - 992 and max-width - 1199.98 ===== */
 @media screen and (min-width: 992px) and (max-width: 1199.98px) {
@@ -231,16 +463,10 @@
         margin: unset;
 
         h2 {
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
           text-align: center;
           margin-bottom: 50px;
         }
         p{
-          font: 0.875rem OpenSans-Regular;
-          color: #808283;
-          line-height: 2;
           padding: 0 10px;
         }
         p:last-child{
@@ -251,27 +477,18 @@
         margin-top: 45px;
 
         h2 {
-          font: 2.125rem OpenSans-Regular;
-          color: rgb(45, 175, 229);
-          line-height: 1.2;
           text-align: center;
           margin-bottom: 50px;
         }
         p{
-          font: 0.875rem OpenSans-Regular;
-          color: #808283;
-          line-height: 2;
           padding: 0 10px;
         }
       }
     }
   }
   /* ====== First block ends ====== */
-  /* ====== Fourth block starts ====== */
-  .intergratie-fourth-block{
-    margin: 80px 0;
-  }
-  /* ====== Fourth block ends ====== */
+  /* ====== Sixth block starts ====== */
+  @include enthousiast-992;
 }
 /* ===== Resolution min-width - 1200 and max-width - 1312 ===== */
 @media screen and (min-width: 1200px) and (max-width: 1312.98px){

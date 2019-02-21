@@ -5,7 +5,6 @@
   margin: 55px 0 75px;
 
   .prev-page-btn{
-
     line-height: 1.2;
     text-align: center;
     border: 1px solid rgb(233, 90, 12);
@@ -21,7 +20,7 @@
       background-color: #fadece;
     }
     a{
-      font: 1rem OpenSans-Semibold;
+      font: 1rem $OpenSansSemiBold;
       color: rgb(233, 90, 12);
       text-decoration: none;
 
@@ -31,22 +30,16 @@
     margin: 0;
 
     h4 {
-      font: 1.1875rem OpenSans-Bold;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h4-style;
       text-align: center;
     }
     h2 {
-      font: 2.125rem OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h2-style;
       text-align: center;
       margin-bottom: 35px;
     }
     p {
-      font: 1rem OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.188;
+      @include p-style;
       text-align: left;
       padding: 0 130px;
     }
@@ -81,22 +74,23 @@
       }
     }
     &-text{
+
       .text-dscrpt{
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         color: #808283;
         line-height: 2;
         text-align: left;
         padding: 5px 25px 25px 25px;
       }
       .text-quote{
-        font: 1.125rem OpenSans-Light;
+        font: 1.125rem $OpenSansLight;
         color: rgb(45, 175, 229);
         line-height: 1.778;
         text-align: left;
         padding: 0 50px 0 25px;
       }
       .text-author{
-        font: 1rem OpenSans-Regular;
+        font: 1rem $OpenSansRegular;
         color: rgb(45, 175, 229);
         line-height: 1.2;
         text-align: left;
@@ -105,7 +99,7 @@
       .text-list{
         text-indent: 1em;
         li{
-          font: 0.875rem OpenSans-REgular;
+          font: 0.875rem $OpenSansRegular;
           color: rgb(128, 130, 131);
           line-height: 2.7;
           text-align: left;
@@ -120,3 +114,5 @@
   }
 }
 /* ====== First block ends ====== */
+@include enthousiast;
+@include footer;

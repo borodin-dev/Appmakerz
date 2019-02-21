@@ -1,21 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
-@import 'fonts';
 @import "variables";
 @import "custom";
 
 
-
-html{
-  font-size: $primary_size;
-}
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-body{
-  margin: 0;
-  padding: 0;
-  font-family: OpenSans-Regular;
-}
 /* ====== Header(navbar) block starts ====== */
 .navbar {
   border-bottom: 1px solid rgb(241, 239, 239);
@@ -31,6 +18,7 @@ body{
     padding: 0 0 1.5px 0;
     line-height: 0.6;
     font-size: 1rem;
+
     &-icon{
       display: inline-block;
       width: 23px;
@@ -81,7 +69,7 @@ body{
     }
     & input#inputSearch {
       background-color: transparent;
-      background-image: url("/img/icons/search.png");
+      background-image: url("../img/icons/search.png");
       background-position: 10px center;
       background-repeat: no-repeat;
       color: #ffffff;
@@ -128,16 +116,14 @@ body{
     align-items: center;
 
     &-title{
-      font-size: 2.125rem;
-      font-family: OpenSans-Bold;
+      font: 2.125rem $OpenSansBold;
       color: rgb(255, 255, 255);
       line-height: 1.2;
       text-align: left;
       margin-bottom: 42px;
     }
     &-subtitle{
-      font-size: 1.5rem;
-      font-family: OpenSans-Regular;
+      font: 1.5rem $OpenSansRegular;
       color: rgb(255, 255, 255);
       line-height: 1.2;
       text-align: left;
@@ -145,13 +131,13 @@ body{
     }
     &-buttons{
       margin-bottom: 65px;
+
       .platform-btn{
         border-radius: 16px;
         background-color: rgb(233, 90, 12);
         width: 113px;
         height: 31px;
-        font-family: OpenSans-SemiBold;
-        font-size: 0.8125rem;
+        font: 0.8125rem $OpenSansSemiBold;
         border: none;
         color: $buttons_color;
         cursor: pointer;
@@ -172,8 +158,7 @@ body{
         border-radius: 16px;
         width: 113px;
         height: 31px;
-        font-family: OpenSans-SemiBold;
-        font-size: 0.8125rem;
+        font:0.8125rem $OpenSansSemiBold;
         background-color: transparent;
         color: $buttons_color;
         cursor: pointer;
@@ -205,8 +190,7 @@ body{
   margin-top: 70px;
 
   &__title{
-    font-size: 1.5rem;
-    font-family: OpenSans-Regular;
+    font: 1.5rem $OpenSansRegular;
     color: rgb(45, 175, 229);
     line-height: 1.833;
     text-align: center;
@@ -236,15 +220,13 @@ body{
       }
     }
     &-title{
-        font-size: 1.1875rem;
-        font-family: OpenSans-Bold;
+        font: 1.1875rem $OpenSansBold;
         color: rgb(45, 175, 229);
         line-height: 1.2;
         text-align: center;
     }
     &-dscrpt{
-        font-size: 1rem;
-        font-family: OpenSans-Regular;
+        font: 1rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 1.813;
         text-align: center;
@@ -255,32 +237,23 @@ body{
 /* ====== Third block starts ====== */
 .screenshots-third-block{
   margin-top: 80px;
-  background-image: url('/img/screenshots_bg.png');
+  background-image: url('../img/screenshots_bg.png');
   background-position: bottom;
   background-repeat: no-repeat;
 
   &__title{
 
     h4{
-      font-size: 1.1875rem;
-      font-family: OpenSans-Bold;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h4-style;
       text-align: center;
     }
     h2{
-      font-size: 2.125rem;
-      font-family: OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h2-style;
       text-align: center;
       margin-bottom: 35px;
     }
     p{
-      font-size: 1rem;
-      font-family: OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.188;
+      @include p-style;
       text-align: left;
       padding: 0 150px;
     }
@@ -313,7 +286,7 @@ body{
       background-color: rgb(233, 90, 12);
       width: 113px;
       height: 31px;
-      font: 0.8125rem OpenSans-SemiBold;
+      font: 0.8125rem $OpenSansSemiBold;
       border: none;
       color: $buttons_color;
       margin-right: 5px;
@@ -334,7 +307,7 @@ body{
       border-radius: 16px;
       width: 113px;
       height: 31px;
-      font: 0.8125rem OpenSans-SemiBold;
+      font: 0.8125rem $OpenSansSemiBold;
       background-color: transparent;
       color: #ffffff;
       margin-left: 5px;
@@ -352,66 +325,13 @@ body{
 }
 /* ====== Third block ends ====== */
 /* ====== Fourth block starts ====== */
-.intergratie-fourth-block{
-  margin-top: 80px;
-
-  &__title{
-
-    h4{
-      font-size: 1.1875rem;
-      font-family: OpenSans-Bold;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
-      text-align: center;
-    }
-    h2{
-      font-size: 2.125rem;
-      font-family: OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
-      text-align: center;
-      margin-bottom: 35px;
-    }
-    p{
-      font-size: 1rem;
-      font-family: OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.188;
-      text-align: left;
-      padding: 0 150px;
-    }
-  }
-  &__content{
-
-    &-logo{
-      margin-top: 45px;
-      text-align: center;
-    }
-    &-line{
-      text-align: center;
-
-      .brand-logo{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 900px;
-        margin: 0 auto;
-
-        .flex-item{
-          width: auto;
-          margin: 15px 25px 0;
-        }
-      }
-    }
-  }
-}
+@include intergratie;
 /* ====== Fourth block ends ====== */
 /* ====== Fifth block starts ====== */
 .functional-fifth-block{
-  margin-top: 100px;
+  margin-top: 50px;
   padding-top: 100px;
-  background-image: url('/img/Oval.png');
+  background-image: url('../img/Oval.png');
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -420,17 +340,11 @@ body{
     margin-bottom: 90px;
 
     h4{
-      font-size: 1.1875rem;
-      font-family: OpenSans-Bold;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h4-style;
       text-align: center;
     }
     h2{
-      font-size: 2.125rem;
-      font-family: OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h2-style;
       text-align: center;
       margin-bottom: 35px;
     }
@@ -441,6 +355,7 @@ body{
       &-donate{
         display: flex;
         margin-top: 40px;
+
         &__line{
           width: 10px;
           height: 66px;
@@ -453,6 +368,7 @@ body{
       }
       &-appmakerz{
         display: flex;
+
         &__line{
           width: 10px;
           height: 66px;
@@ -465,6 +381,7 @@ body{
       }
       &-manage{
         display: flex;
+
         &__line{
           width: 10px;
           height: 66px;
@@ -477,6 +394,7 @@ body{
       }
       &-source{
         display: flex;
+
         &__line{
           width: 10px;
           height: 66px;
@@ -489,6 +407,7 @@ body{
       }
       &-secure{
         display: flex;
+
         &__line{
           width: 10px;
           height: 66px;
@@ -501,6 +420,7 @@ body{
       }
       &-scale{
         display: flex;
+
         &__line{
           width: 10px;
           height: 66px;
@@ -513,6 +433,7 @@ body{
       }
       &-monitor{
         display: flex;
+
         &__line{
           width: 10px;
           height: 66px;
@@ -529,16 +450,14 @@ body{
       margin: 40px -5px 0 0;
 
       &__title{
-        font-size: 1.1875rem;
-        font-family: OpenSans-Bold;
+        font: 1.1875rem $OpenSansBold;
         color: rgb(45, 175, 229);
         line-height: 1.2;
         text-align: left;
         margin-top: 35px;
       }
       &__text{
-        font-size: 0.75rem;
-        font-family: OpenSans-Regular;
+        font: 0.75rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 2.167;
         text-align: left;
@@ -549,16 +468,14 @@ body{
       margin: 40px;
 
       &__title{
-        font-size: 1.1875rem;
-        font-family: OpenSans-Bold;
+        font: 1.1875rem $OpenSansBold;
         color: rgb(45, 175, 229);
         line-height: 1.2;
         text-align: left;
         margin-top: 35px;
       }
       &__text{
-        font-size: 0.75rem;
-        font-family: OpenSans-Regular;
+        font: 0.75rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 2.167;
         text-align: left;
@@ -568,199 +485,10 @@ body{
 }
 /* ====== Fifth block ends ====== */
 /* ====== Sixth block starts ====== */
-.enthousiast-sixth-block{
-  background-image: -moz-linear-gradient( -93.071deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,110,182) 100%);
-  background-image: -webkit-linear-gradient( -93.071deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,110,182) 100%);
-  background-image: linear-gradient( -93.071deg, rgb(129,207,244) 0%, rgb(0,147,198) 53%, rgb(0,110,182) 100%);
-  padding-top: 40px;
-
-  &__title{
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    flex-direction: column;
-
-    h2{
-      font-size: 2.125rem;
-      font-family: OpenSans-Bold;
-      color: rgb(255, 255, 255);
-      line-height: 1.2;
-      text-align: left;
-      margin-bottom: 33px;
-    }
-    h4{
-      font-size: 1.5rem;
-      font-family: OpenSans-Regular;
-      color: rgb(255, 255, 255);
-      line-height: 1.2;
-      text-align: left;
-    }
-    &-buttons{
-      margin-top: 50px;
-
-      .contact-btn {
-        border: none;
-        border-radius: 15px;
-        background-color: rgb(233, 90, 12);
-        width: 133px;
-        height: 31px;
-        font-family: OpenSans-SemiBold;
-        font-size: 0.8125rem;
-        border: none;
-        color: $buttons_color;
-        cursor: pointer;
-        margin-right: 10px;
-        padding: 5px;
-        -webkit-transition: 0.2s ease-out;
-        -moz-transition: 0.2s ease-out;
-        -o-transition: 0.2s ease-out;
-        transition: 0.2s ease-out;
-
-        &:hover{
-          background-color: rgba(233, 90, 12, 0.8);
-        }
-      }
-      .pricing-btn {
-        border-width: 1px;
-        border-color: rgb(255, 255, 255);
-        border-style: solid;
-        border-radius: 15px;
-        width: 111px;
-        height: 31px;
-        color: $buttons_color;
-        background-color: transparent;
-        font-family: OpenSans-SemiBold;
-        font-size: 0.8125rem;
-        cursor: pointer;
-        margin-left: 6px;
-        padding: 5px;
-        -webkit-transition:  0.2s ease-out;
-        -moz-transition:  0.2s ease-out;
-        -o-transition:  0.2s ease-out;
-        transition:  0.2s ease-out;
-
-        &:hover{
-          background-color: rgba(214, 214, 214, 0.5);
-        }
-      }
-    }
-  }
-}
+@include enthousiast;
 /* ====== Sixth block ends ====== */
 /* ====== Footer block starts ====== */
-footer{
-  padding-top: 50px;
-
-  .footer-menu{
-
-    h5{
-        font-size: 0.75rem;
-        font-family: OpenSans-Bold;
-        color: rgb(128, 130, 131);
-        line-height: 2.5;
-        text-align: left;
-    }
-    .col-lg-6 {
-
-      a{
-        display: block;
-        font-size: 0.75rem;
-        font-family: OpenSans-Regular;
-        color: rgb(128, 130, 131);
-        line-height: 2.583;
-        text-align: left;
-      }
-    }
-  }
-  .footer-address{
-
-    h4{
-      font-size: 1rem;
-      font-family: OpenSans-Bold;
-      color: rgb(128, 130, 131);
-      line-height: 1.875;
-      text-align: left;
-    }
-    p {
-      font-size: 0.75rem;
-      font-family: OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.5;
-      text-align: left;
-      margin: 0;
-    }
-    &__email{
-      .title-letter{
-        font-size: 0.75rem;
-        font-family: OpenSans-Bold;
-        color: rgb(128, 130, 131);
-        line-height: 2.5;
-        text-align: left;
-        margin-right: 17px;
-      }
-      .email{
-        font-size: 0.75rem;
-        font-family: OpenSans-Italic;
-        color: rgb(128, 130, 131);
-        line-height: 2.5;
-        text-align: left;
-      }
-    }
-    &__tel{
-      .title-letter{
-        font-size: 0.75rem;
-        font-family: OpenSans-Bold;
-        color: rgb(128, 130, 131);
-        line-height: 2.5;
-        text-align: left;
-        margin-right: 17px;
-      }
-      .tel{
-        font-size: 0.75rem;
-        font-family: OpenSans-Italic;
-        color: rgb(128, 130, 131);
-        line-height: 2.5;
-        text-align: left;
-      }
-    }
-  }
-  .footer-info{
-    margin-top: 15px;
-    text-align: right;
-    h3{
-      font-size: 1rem;
-      font-family: OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.75;
-      text-align: right;
-      margin-bottom: 20px;
-    }
-    img{
-      text-align: right;
-    }
-  }
-  .footer-terms{
-    display: flex;
-    margin: 40px 0 20px;
-    .order-to-show{
-      padding: 0;
-      display: flex;
-
-      span, a{
-        font-size: 0.75rem;
-        font-family: OpenSans-Regular;
-        color: rgb(193, 193, 193);
-        line-height: 2.583;
-        text-align: left;
-        margin: 0 22px 0 0;
-      }
-    }
-  }
-  .blue-footer-line {
-    background-color: rgb(45, 175, 229);
-    height: 10px;
-  }
-}
+@include footer;
 /* ====== Footer block ends ====== */
 
 /* ====== Responsive ====== */
@@ -775,3 +503,7 @@ footer{
 @import "kennisplatform_responsive";
 @import "platform";
 @import "platform_responsive";
+@import "contact";
+@import "contact_responsive";
+@import "partners";
+@import "partners_responsive";

@@ -2,46 +2,40 @@
 
 /* ====== First block starts ====== */
 .cases-first-block{
-     margin: 55px 0 75px;
+  margin: 55px 0 75px;
 
-     &__title{
-       margin-bottom: 70px;
+  &__title{
+    margin-bottom: 70px;
 
-       h4 {
-         font: 1.1875rem OpenSans-Bold;
-         color: rgb(45, 175, 229);
-         line-height: 1.2;
-         text-align: center;
-       }
-       h2 {
-         font: 2.125rem OpenSans-Regular;
-         color: rgb(45, 175, 229);
-         line-height: 1.2;
-         text-align: center;
-         margin-bottom: 35px;
-       }
-       p {
-         font: 1rem OpenSans-Regular;
-         color: rgb(128, 130, 131);
-         line-height: 2.188;
-         text-align: left;
-         padding: 0 130px;
-       }
-     }
+    h4 {
+      @include h4-style;
+      text-align: center;
+    }
+    h2 {
+      @include h2-style;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    p {
+      @include p-style;
+      text-align: left;
+      padding: 0 130px;
+    }
+  }
   &__content{
     margin-top: 90px;
 
     .content-dscrpt{
 
       &__title{
-        font: 2.125rem OpenSans-Regular;
+        font: 2.125rem $OpenSansRegular;
         color: rgb(45, 175, 229);
         line-height: 1.2;
         text-align: left;
         margin-bottom: 32px;
       }
       &__subtitle{
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 2.071;
         text-align: left;
@@ -49,7 +43,7 @@
         padding-right: 40px;
       }
       &__list{
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 2.5;
       }
@@ -59,13 +53,13 @@
         margin-bottom: 25px;
       }
       &__quote{
-        font: 1.125rem OpenSans-Light;
+        font: 1.125rem $OpenSansLight;
         color: rgb(45, 175, 229);
         line-height: 1.778;
         text-align: left;
       }
       &__author{
-        font: 1rem OpenSans-Regular;
+        font: 1rem $OpenSansRegular;
         color: rgb(45, 175, 229);
         line-height: 1.2;
         text-align: left;
@@ -76,16 +70,14 @@
       justify-content: space-evenly;
       align-items: center;
 
-      &__img {
-      }
-
+      &__img { }
       &__btn {
         display: flex;
         flex-direction: row;
         justify-content: center;
 
         a {
-          font: 0.8125rem OpenSans-SemiBold;
+          font: 0.8125rem $OpenSansSemiBold;
           color: rgb(45, 175, 229);
           line-height: 1.2;
           text-align: center;
@@ -123,14 +115,12 @@
     .content-dscrpt{
 
       &__title{
-        font: 2.125rem OpenSans-Regular;
-        color: rgb(45, 175, 229);
-        line-height: 1.2;
+        @include h2-style;
         text-align: left;
         margin-bottom: 32px;
       }
       &__subtitle{
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 2.071;
         text-align: left;
@@ -138,7 +128,7 @@
         padding-right: 40px;
       }
       &__list{
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 2.5;
       }
@@ -149,13 +139,13 @@
         margin-bottom: 25px;
       }
       &__quote{
-        font: 1.125rem OpenSans-Light;
+        font: 1.125rem $OpenSansLight;
         color: rgb(45, 175, 229);
         line-height: 1.778;
         text-align: left;
       }
       &__author{
-        font: 1rem OpenSans-Regular;
+        font: 1rem $OpenSansRegular;
         color: rgb(45, 175, 229);
         line-height: 1.2;
         text-align: left;
@@ -166,16 +156,14 @@
       justify-content: space-evenly;
       align-items: center;
 
-      &__img {
-      }
-
+      &__img { }
       &__btn {
         display: flex;
         flex-direction: row;
         justify-content: center;
 
         a {
-          font: 0.8125rem OpenSans-SemiBold;
+          font: 0.8125rem $OpenSansSemiBold;
           color: rgb(45, 175, 229);
           line-height: 1.2;
           text-align: center;
@@ -212,14 +200,12 @@
     .content-dscrpt{
 
       &__title{
-        font: 2.125rem OpenSans-Regular;
-        color: rgb(45, 175, 229);
-        line-height: 1.2;
+        @include h2-style;
         text-align: left;
         margin-bottom: 32px;
       }
       &__subtitle{
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 2.071;
         text-align: left;
@@ -227,7 +213,7 @@
         padding-right: 40px;
       }
       &__list{
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         color: rgb(128, 130, 131);
         line-height: 2.5;
       }
@@ -237,13 +223,13 @@
         margin-bottom: 25px;
       }
       &__quote{
-        font: 1.125rem OpenSans-Light;
+        font: 1.125rem $OpenSansLight;
         color: rgb(45, 175, 229);
         line-height: 1.778;
         text-align: left;
       }
       &__author{
-        font: 1rem OpenSans-Regular;
+        font: 1rem $OpenSansRegular;
         color: rgb(45, 175, 229);
         line-height: 1.2;
         text-align: left;
@@ -256,14 +242,13 @@
 
       &__img {
       }
-
       &__btn {
         display: flex;
         flex-direction: row;
         justify-content: center;
 
         a {
-          font: 0.8125rem OpenSans-SemiBold;
+          font: 0.8125rem $OpenSansSemiBold;
           color: rgb(45, 175, 229);
           line-height: 1.2;
           text-align: center;
@@ -299,104 +284,220 @@
     margin-bottom: 70px;
 
     h4 {
-      font: 1.1875rem OpenSans-Bold;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h4-style;
       text-align: center;
     }
     h2 {
-      font: 2.125rem OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h2-style;
       text-align: center;
       margin-bottom: 35px;
     }
     p {
-      font: 1rem OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.188;
+      @include p-style;
       text-align: left;
       padding: 0 130px;
     }
   }
   &__content{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-bottom: 100px;
 
+    .content-sidebar{
+      background-color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px 125px;
+      margin-left: 13%;
+
+      &__title{
+        font: 1.25rem $OpenSansRegular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin: 30px 0 40px;
+      }
+      &__branche{
+        font: 1rem $OpenSansRegular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+        margin: 0;
+      }
+      .branche-control {
+        margin: 0 auto 35px;
+        padding: 0;
+        transition: padding 200ms ease-in-out 100ms;
+        position: relative;
+        width: 230px;
+
+        &__label {
+          color: #808283;
+          cursor: text;
+          display: block;
+          font: 1rem $OpenSansRegular;
+          font-weight: 300;
+          line-height: 1.3;
+          padding: 0;
+          transition: transform ease-in-out 200ms, color ease-in-out 200ms;
+          -webkit-transform: translateY(29px) translateX(7px) scale(1);
+          transform: translateY(29px) translateX(7px) scale(1);
+          -webkit-transform-origin: left;
+          transform-origin: left;
+          width: calc(100% - 14px);
+          z-index: 1;
+          position: relative;
+          margin: 0 -7px;
+        }
+        &.has-value .branche-control__label {
+          -webkit-transform: translateX(7px) scale(.75);
+          transform: translateX(7px) scale(.75);
+        }
+        &__wrap {
+          background-color: transparent;
+          border-bottom: 1px solid #2dafe5;
+          display: block;
+          padding: 0;
+          transition: border-color .2s ease-in-out;
+          height: 39px;
+          position: relative;
+
+          & select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            border: 0;
+            color: #808283;
+            display: block;
+            font: 1.063rem $OpenSansRegular;
+            line-height: 1.2;
+            margin: 0;
+            padding: 10px 38px 9px 0;
+            outline: 0;
+            z-index: 5;
+            position: relative;
+            width: 100%;
+          }
+        }
+        .wrap-icon {
+          color: #3fb5e6;
+          background-color: transparent;
+          display: block;
+          z-index: 1;
+          height: 33px;
+          width: 23px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+        }
+      }
+
+      &__filter{
+        font: 1rem $OpenSansRegular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: left;
+      }
+      &__form{
+        display: flex;
+        flex-direction: column;
+
+        label{
+          font: 1rem $OpenSansRegular;
+          color: rgb(128, 130, 131);
+          line-height: 2;
+          text-align: left;
+          cursor: pointer;
+
+          .checkbox-custom {
+            margin: 0 10px 5px 0;
+            position: relative;
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            display: inline-block;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            outline: 0;
+
+            &:after {
+              content: '';
+              position: absolute;
+              display: block;
+              z-index: 1;
+              width: 16px;
+              height: 16px;
+              border: 1px solid #cacaca;
+              border-radius: 2px;
+              background-color: #ffffff;
+            }
+            &[type=checkbox]:before {
+              background: #2dafe5 url("http://i.imgur.com/dR1TM0y.png");
+              background-size: 10px 8px;
+              background-repeat: no-repeat;
+              background-position: 2px 4px;
+              position: absolute;
+              left: 2px;
+              z-index: 2;
+              opacity: 0;
+              width: 100%;
+              height: 100%;
+              color: #2dafe5;
+            }
+            &[type=checkbox]:checked:before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              opacity: 1;
+              left: 0px;
+              border: 1px solid #2dafe5;
+              border-radius: 2px;
+            }
+          }
+        }
+      }
+    }
     .content-logo {
       display: flex;
       justify-content: center;
-      flex-flow: column;
-      align-items: center;
+      flex-wrap: wrap;
 
-      &:nth-child(1) {
-        padding-left: 45px;
+      &__container{
+        margin-left: 13px;
+        width: 100%;
+        height: calc(100% - 35px);
 
-        .content-logo__link {
-          padding: 56px 0 27px;
-        }
-
-        img {
-          margin: 20px;
-        }
-      }
-
-      &:nth-child(2) {
-        margin: 0 50px;
-
-        .content-logo__link {
-          padding: 51px 0 27px;
+        .container__img{
+          border: 1px solid #cacaca;
+          padding: 30px;
+          width: 235px;
+          height: 140px;
+          display: flex;
+          align-items: center;
+          margin: 0 20px 20px 0;
+          float: left;
         }
       }
+      &__pagination{
+        margin: 15px 0 0 -20px;
 
-      &:nth-child(3) {
+        .pagination{
+          margin: 0;
 
-        .content-logo__link {
-          padding: 47px 0 27px;
+          .page-link{
+            border: none;
+            padding: 0.3rem;
+          }
         }
-
-        img {
-          margin-top: -20px;
-        }
-      }
-
-      &:nth-child(4) {
-        padding-left: 45px;
-      }
-
-      &:nth-child(5) {
-        margin: 0 50px;
-
-        .content-logo__link {
-          padding: 45px 0 27px;
-        }
-      }
-    }
-    .content-logo__link{
-      padding: 27px;
-      font: 0.875rem OpenSans-Bold;
-    }
-    .content-logo__btn{
-      font: 0.8125rem OpenSans-SemiBold;
-      color: rgb(233, 90, 12);
-      line-height: 1.2;
-      text-align: center;
-      border: 1px solid rgb(233, 90, 12);
-      border-radius: 15px;
-      width: 121px;
-      height: 29px;
-      padding: 6px 16px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: ease-out .2s;
-      background-color: transparent;
-      margin-bottom: 80px;
-
-      &:hover{
-        background-color: rgba(248,201,176,0.3);
       }
     }
   }
 }
 /* ====== Fourth block ends ====== */
+@include enthousiast;
+@include footer;

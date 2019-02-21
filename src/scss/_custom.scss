@@ -1,3 +1,14 @@
+html{
+  font-size: $primary_size;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: $OpenSansRegular;
+}
 /* ====== Header(navbar) block starts ====== */
 .navbar{
   position: relative;
@@ -17,8 +28,7 @@ nav[aria-label=breadcrumb]{
     padding: 7px;
 
     &-item{
-      font-size: 0.625rem;
-      font-family: OpenSans-SemiBoldItalic;
+      font: 0.625rem $OpenSansSemiBoldItalic;
       color: rgb(202, 202, 202);
       line-height: 1.7;
       text-align: left;

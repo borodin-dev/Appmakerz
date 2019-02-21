@@ -1,9 +1,10 @@
 @import "custom";
+
 /* ====== First block starts ====== */
 .pricing-first-block {
   margin-top: 55px;
   padding-bottom: 280px;
-  background-image: url('/img/pricing-blk-bg.png');
+  background-image: url('../img/pricing-blk-bg.png');
   background-repeat: no-repeat;
   background-position: center bottom;
 
@@ -11,22 +12,16 @@
     margin-bottom: 70px;
 
     h4 {
-      font: 1.1875rem OpenSans-Bold;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h4-style;
       text-align: center;
     }
     h2 {
-      font: 2.125rem OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h2-style;
       text-align: center;
       margin-bottom: 35px;
     }
     p {
-      font: 1rem OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.188;
+      @include p-style;
       text-align: left;
       padding: 0 150px;
     }
@@ -50,8 +45,7 @@
         top: -20px;
         left: 50%;
         transform: translate(-50%, 0);
-        font-size: 1rem;
-        font-family: OpenSans-SemiBold;
+        font: 1rem $OpenSansSemiBold;
         color: rgb(255, 255, 255);
         line-height: 1.2;
         text-align: center;
@@ -73,8 +67,7 @@
         top: -20px;
         left: 50%;
         transform: translate(-50%, 0);
-        font-size: 1rem;
-        font-family: OpenSans-SemiBold;
+        font: 1rem $OpenSansSemiBold;
         color: rgb(255, 255, 255);
         line-height: 1.2;
         text-align: center;
@@ -86,7 +79,6 @@
         border-radius: 9px;
         transition: all 0.3s ease-in-out;
         cursor: default;
-
       }
       /*tooltip */
       .tooltip {
@@ -173,8 +165,7 @@
         top: -20px;
         left: 50%;
         transform: translate(-50%, 0);
-        font-size: 1rem;
-        font-family: OpenSans-SemiBold;
+        font: 1rem $OpenSansSemiBold;
         color: rgb(255, 255, 255);
         line-height: 1.2;
         text-align: center;
@@ -194,17 +185,16 @@
 
       &__subtitle{
         color: #343b42;
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
       }
       &__price{
         color: #343b42;
-        font: 2.5rem OpenSans-Bold;
-
+        font: 2.5rem $OpenSansBold;
       }
       &__list {
         text-align: left;
         color: #343b42;
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         list-style: none;
         line-height: 2;
         padding: 0 30px;
@@ -226,11 +216,11 @@
       }
       &__note{
         color: #343b42;
-        font: 0.875rem OpenSans-Regular;
+        font: 0.875rem $OpenSansRegular;
         padding: 30px 65px 41px;
       }
       &__btn {
-        font: 1rem OpenSans-SemiBold;
+        font: 1rem $OpenSansSemiBold;
         background-color: transparent;
         color: rgb(233, 90, 12);
         line-height: 1.2;
@@ -261,16 +251,12 @@
     margin-bottom: 70px;
 
     h2 {
-      font: 2.125rem OpenSans-Regular;
-      color: rgb(45, 175, 229);
-      line-height: 1.2;
+      @include h2-style;
       text-align: center;
       margin-bottom: 35px;
     }
     p {
-      font: 1rem OpenSans-Regular;
-      color: rgb(128, 130, 131);
-      line-height: 2.188;
+      @include p-style;
       text-align: left;
       padding: 0 150px;
     }
@@ -283,7 +269,6 @@
         display: flex;
         justify-content: flex-end;
 
-
         &__basic,
         &__advanced,
         &__enterprise{
@@ -291,7 +276,7 @@
           text-align: center;
           padding: 19px;
           color: #fff;
-          font: 0.875rem OpenSans-SemiBold;
+          font: 0.875rem $OpenSansSemiBold;
         }
         &__basic{
           background-color: rgb(0, 110, 182);
@@ -316,7 +301,7 @@
           padding: 14px 35px;
           border: 1px solid #e1e1e1;
           position: relative;
-          font: 1rem OpenSans-Regular;
+          font: 1rem $OpenSansRegular;
           border-top: 0;
           border-right: 0;
 
@@ -350,10 +335,10 @@
           background-color: #ffffff;
 
           &__title {
-            width: 69.7%;
+            width: 69.4%;
             padding: 18px 27px;
             border: 1px solid #e1e1e1;
-            font: 0.875rem OpenSans-Regular;
+            font: 0.875rem $OpenSansRegular;
             border-top: 0;
             border-right: 0;
           }
@@ -379,3 +364,5 @@
   }
 }
 /* ====== Second block ends ====== */
+@include enthousiast;
+@include footer;
