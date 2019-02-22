@@ -177,13 +177,14 @@ $OpenSansSemiBoldItalic: OpenSans-SemiBoldItalic;
       height: 100%;
       justify-content: center;
       flex-direction: column;
+      padding-bottom: 46px;
 
       h2 {
         font: 2.125rem $OpenSansBold;
         color: rgb(255, 255, 255);
         line-height: 1.2;
         text-align: left;
-        margin-bottom: 33px;
+        margin-bottom: 30px;
       }
 
       h4 {
@@ -194,7 +195,7 @@ $OpenSansSemiBoldItalic: OpenSans-SemiBoldItalic;
       }
 
       &-buttons {
-        margin-top: 50px;
+        margin-top: 30px;
 
         .contact-btn {
           border: none;

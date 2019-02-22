@@ -20,7 +20,9 @@
       .line-team-2{
         visibility: hidden;
       }
-
+      .cross-device{
+        margin-top: 0;
+      }
       .platform-first-block__left-blk{
         margin: unset;
 
@@ -51,6 +53,7 @@
   /* ====== First block ends ====== */
   /* ====== Second block starts ====== */
   .multi-second-block{
+    margin-bottom: 80px;
 
     &__title{
       
@@ -162,7 +165,9 @@
       .line-team-2{
         visibility: hidden;
       }
-
+      .cross-device{
+        margin-top: 0;
+      }
       .platform-first-block__left-blk{
         margin: unset;
 
@@ -193,6 +198,7 @@
   /* ====== First block ends ====== */
   /* ====== Second block starts ====== */
   .multi-second-block{
+    margin-bottom: 80px;
 
     &__title{
 
@@ -311,6 +317,9 @@
       .col-lg-6 {
         text-align: center;;
       }
+      .cross-device{
+        margin-top: 0;
+      }
       .platform-first-block__left-blk{
         margin: unset;
 
@@ -341,6 +350,7 @@
   /* ====== First block ends ====== */
   /* ====== Second block starts ====== */
   .multi-second-block{
+    margin-bottom: 80px;
 
     &__title{
 
@@ -460,7 +470,7 @@
         order: unset;
       }
       .platform-first-block__left-blk{
-        margin: unset;
+        margin: 50px 0;
 
         h2 {
           text-align: center;
