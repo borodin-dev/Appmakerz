@@ -1,0 +1,215 @@
+@import "custom";
+/* ====== First block starts ====== */
+.voorbeeld-first-block {
+  margin-top: 55px;
+
+  &__title {
+    margin-bottom: 70px;
+
+    h4 {
+      @include h4-style;
+      text-align: center;
+    }
+    h2 {
+      @include h2-style;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    p {
+      @include p-style;
+      text-align: left;
+      padding: 0 140px;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: center;
+
+    .apps-left{
+      margin: 0;
+
+      &__search{
+        margin-bottom: 36px;
+
+        .search-group{
+          display: flex;
+          flex-direction: column;
+
+          label{
+            font: 1rem $OpenSansRegular;
+            color: rgb(45, 175, 229);
+            line-height: 1.2;
+            text-align: left;
+          }
+          &__input {
+            display: flex;
+
+            input {
+              display: block;
+              font: 0.8125rem $OpenSansRegular;
+              color: #808283;
+              line-height: 1.3;
+              padding: .6em 1.4em .5em 0;
+              width: 100%;
+              box-sizing: border-box;
+              border: none;
+              border-bottom: 2px solid #2dafe5;
+              border-radius: unset;
+              -moz-appearance: none;
+              -webkit-appearance: none;
+              appearance: none;
+              outline: none;
+
+              &::-ms-expand {
+                display: none;
+              }
+            }
+            a{
+              margin-left: -20px;
+            }
+          }
+        }
+      }
+      &__list{
+
+        .first-app,
+        .second-app,
+        .third-app,
+        .fourth-app,
+        .fifth-app,
+        .sixth-app{
+          border: 1px solid rgb(202, 202, 202);
+          display: flex;
+          align-items: center;
+          margin-bottom: 25px;
+
+          img{ margin: 10px 32px 10px 20px; }
+          &__title{
+            a{ text-decoration: none; }
+            h5{
+              font: 1.25rem $OpenSansRegular;
+              color: rgb(45, 175, 229);
+              line-height: 1.2;
+              text-align: left;
+            }
+            p{
+              margin: 0;
+              font: 0.75rem $OpenSansRegular;
+              color: rgb(128, 130, 131);
+              line-height: 1.667;
+              text-align: left;
+              padding-right: 75px;
+            }
+          }
+        }
+      }
+    }
+    .apps-right{
+      margin: 0;
+
+      &__filter{
+        margin-bottom: 36px;
+
+        .filter-group{
+          display: flex;
+          flex-direction: column;
+
+          label{
+            font: 1rem $OpenSansRegular;
+            color: rgb(45, 175, 229);
+            line-height: 1.2;
+            text-align: left;
+          }
+          select{
+            display: block;
+            font: 0.8125rem $OpenSansRegular;
+            color: #808283;
+            line-height: 1.3;
+            padding: .6em 1.4em .5em 0;
+            width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 2px solid #2dafe5;
+            border-radius: unset;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: transparent;
+            background-image: url('../img/icons/chevron_up_blue.png');
+            background-repeat: no-repeat, repeat;
+            background-position: 140px 16px, 0 0;
+            background-size: 1.2em auto, 100%;
+            outline: none;
+
+            &::-ms-expand { display: none; }
+          }
+        }
+      }
+      &__list{
+
+        .first-app,
+        .second-app,
+        .third-app,
+        .fourth-app,
+        .fifth-app,
+        .sixth-app{
+          border: 1px solid rgb(202, 202, 202);
+          display: flex;
+          align-items: center;
+          margin-bottom: 25px;
+
+          img{ margin: 10px 32px 10px 20px; }
+          &__title{
+            a{ text-decoration: none; }
+            h5{
+              font: 1.25rem $OpenSansRegular;
+              color: rgb(45, 175, 229);
+              line-height: 1.2;
+              text-align: left;
+            }
+            p{
+              margin: 0;
+              font: 0.75rem $OpenSansRegular;
+              color: rgb(128, 130, 131);
+              line-height: 1.667;
+              text-align: left;
+              padding-right: 75px;
+            }
+          }
+        }
+      }
+    }
+  }
+  hr{
+    border-width: 4px;
+    border-color: rgb(45, 175, 229);
+    border-style: solid;
+    height: 0;
+    z-index: 2008;
+  }
+  .home-page-btn{
+    line-height: 1.2;
+    text-align: center;
+    border: 1px solid rgb(233, 90, 12);
+    border-radius: 17px;
+    width: 199px;
+    height: 35px;
+    padding: 5px;
+    margin: 37px 0 130px;
+    background-color: transparent;
+    transition: ease-out .2s;
+
+    &:hover{
+      background-color: #fadece;
+    }
+    a{
+      font: 1rem $OpenSansSemiBold;
+      color: rgb(233, 90, 12);
+      text-decoration: none;
+    }
+  }
+}
+/* ====== First block ends ====== */
+@include enthousiast;
+@include footer;

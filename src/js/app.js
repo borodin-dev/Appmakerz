@@ -172,6 +172,111 @@ $(document).ready(function () {
             return false;
         });
     }
+    /* ====== Voorbeeld apps next Page Slider ====== */
+    if ($(window).width() < 767.98) {
+        let carouselVoor = $('#carouselVoor').waterwheelCarousel({
+            separation:                 20,
+            horizonOffsetMultiplier:    2,
+            sizeMultiplier:             0.48,
+            opacityMultiplier:          0.5,
+            flankingItems:              0,
+            // animation
+            speed:                      700,
+            animationEasing:            'linear',
+            movedToCenter: function() {
+                $('#nextCases, #prevCases').click(function(){
+                    $(this).data('clicked', true);
+                });
+                if($('#nextCases').data('clicked')) {
+                    if($('img.no-img').hasClass('carousel-center')){
+                        $('#nextCases').click();
+                    }
+                } else if ($('#prevCases').data('clicked')){
+                    if($('img.no-img').hasClass('carousel-center')){
+                        $('#prevCases').click();
+                    }
+                }
+            }
+        });
+        $('#prevCases').bind('click', function () {
+            carouselVoor.prev();
+            return false
+        });
+        $('#nextCases').bind('click', function () {
+            carouselVoor.next();
+            return false;
+        });
+    } else if ($(window).width() >= 768 && $(window).width() <= 991.98) {
+        let carouselVoor = $('#carouselVoor').waterwheelCarousel({
+            separation: 127,
+            horizonOffsetMultiplier: 1,
+            sizeMultiplier: 0.78,
+            opacityMultiplier: 1,
+            flankingItems: 1,
+            speed: 700,
+            animationEasing: 'linear',
+            movedToCenter: function() {
+                $('#nextVoor, #prevVoor').click(function(){
+                    $(this).data('clicked', true);
+                });
+                if($('#nextVoor').data('clicked')) {
+                    if($('img.no-img').hasClass('carousel-center')){
+                        $('#nextVoor').click();
+                    }
+                } else if ($('#prevVoor').data('clicked')){
+                    if($('img.no-img').hasClass('carousel-center')){
+                        $('#prevVoor').click();
+                    }
+                }
+                if($('.iPad').hasClass('carousel-center')){
+                    $(' #item-5').css('margin-left','0');
+                }
+            }
+        });
+        $('#prevVoor').bind('click', function () {
+            carouselVoor.prev();
+            return false
+        });
+        $('#nextVoor').bind('click', function () {
+            carouselVoor.next();
+            return false;
+        });
+    } else {
+        let carouselVoor = $('#carouselVoor').waterwheelCarousel({
+            separation: 155,
+            horizonOffsetMultiplier: 1,
+            sizeMultiplier: 0.78,
+            opacityMultiplier: 1,
+            flankingItems: 2,
+            speed: 700,
+            animationEasing: 'linear',
+            movedToCenter: function() {
+                $('#nextVoor, #prevVoor').click(function(){
+                    $(this).data('clicked', true);
+                });
+                if($('#nextVoor').data('clicked')) {
+                    if($('img.no-img').hasClass('carousel-center')){
+                        $('#nextVoor').click();
+                    }
+                } else if ($('#prevVoor').data('clicked')){
+                    if($('img.no-img').hasClass('carousel-center')){
+                        $('#prevVoor').click();
+                    }
+                }
+                if($('.iPad').hasClass('carousel-center')){
+                    $(' #item-5').css('margin-left','0');
+                }
+            }
+        });
+        $('#prevVoor').bind('click', function () {
+            carouselVoor.prev();
+            return false
+        });
+        $('#nextVoor').bind('click', function () {
+            carouselVoor.next();
+            return false;
+        });
+    }
 
     /* ====== Reload script(for moments when you change resolution) ====== */
     let cachedWidth = $(window).width();

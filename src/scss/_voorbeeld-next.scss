@@ -1,0 +1,170 @@
+@import "custom";
+/* ====== First block starts ====== */
+.voorbeeldnext-first-block {
+  margin-top: 55px;
+
+  .prev-page-btn{
+    line-height: 1.2;
+    text-align: center;
+    border: 1px solid rgb(233, 90, 12);
+    border-radius: 17px;
+    width: 199px;
+    height: 35px;
+    padding: 5px;
+    background-color: transparent;
+    transition: ease-out .2s;
+
+    &:hover{
+      background-color: #fadece;
+    }
+    a{
+      font: 1rem $OpenSansSemiBold;
+      color: rgb(233, 90, 12);
+      text-decoration: none;
+
+    }
+  }
+  &__title {
+    margin-bottom: 70px;
+
+    h4 {
+      @include h4-style;
+      text-align: center;
+    }
+    h2 {
+      @include h2-style;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    p {
+      @include p-style;
+      text-align: left;
+      padding: 0 140px;
+    }
+  }
+  &__content {
+    margin: 0;
+
+    &-dscrpt{
+
+      h5{
+        font: 1.25rem $OpenSansRegular;
+        color: rgb(45, 175, 229);
+        line-height: 1.9;
+        text-align: left;
+        padding-right: 45px;
+      }
+      p{
+        font: 0.875rem $OpenSansRegular;
+        color: rgb(128, 130, 131);
+        line-height: 2.071;
+        text-align: left;
+        padding-right: 65px;
+      }
+      .vfb-content-dscrpt__choosed{
+        background-image: -webkit-linear-gradient(white 17%, #f0f0f0 17%);
+        display: flex;
+        flex-direction: column;
+
+        .choosed-list{
+          margin: 0 auto;
+          padding-top: 40px;
+
+          p{
+            font: 0.875rem $OpenSansRegular;
+            color: #2dafe5;
+            padding: 0;
+            margin: 0 0 25px 10px;
+          }
+          span{
+            font: 0.875rem $OpenSansRegular;
+            color: $primary_color;
+            margin-left: 40px;
+          }
+        }
+      }
+    }
+    &-slider{
+      position: relative;
+      height: 600px;
+
+      & #carouselVoor{
+        position: relative;
+        height: 585px;
+
+        #item-4{
+          //left: 200.513px !important;
+          margin-left: -35px;
+        }
+        #item-5{
+          margin-left: 20px;
+        }
+      }
+      .control-arrows{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 585px;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}
+/* ====== First block ends ====== */
+/* ====== Second block starts ====== */
+.compatible-second-block{
+  padding: 5px;
+  background-image: url(../img/Oval.png);
+  background-position: top;
+  background-size: cover;
+
+  &__title{
+    font: 2.125rem $OpenSansRegular;
+    color: rgb(45, 175, 229);
+    line-height: 1.2;
+    text-align: center;
+    margin: 70px 0;
+  }
+  &__content{
+    justify-content: center;
+
+    .col-lg-3 {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font: 1.25rem $OpenSansRegular;
+        color: rgb(45, 175, 229);
+        line-height: 1.2;
+        text-align: center;
+        margin: 40px 0;
+      }
+    }
+  }
+  .home-page-btn{
+    line-height: 1.2;
+    text-align: center;
+    border: 1px solid rgb(233, 90, 12);
+    border-radius: 17px;
+    width: 199px;
+    height: 35px;
+    padding: 5px;
+    margin: 37px 0 77px;
+    background-color: transparent;
+    transition: ease-out .2s;
+
+    &:hover{
+      background-color: #fadece;
+    }
+    a{
+      font: 1rem $OpenSansSemiBold;
+      color: rgb(233, 90, 12);
+      text-decoration: none;
+    }
+  }
+}
+/* ====== Second block ends ====== */
+@include enthousiast;
+@include footer;

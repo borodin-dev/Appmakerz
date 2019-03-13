@@ -4,33 +4,21 @@ const webpack = require('webpack');
 
 //additional plugins
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-// const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const CopyPlugin = require('copy-webpack-plugin');
 
 //module settings
 module.exports = {
-    //basic path to project
-    // context: path.resolve(__dirname, 'src'),
-
     //entry js
     entry: {
         //main file of app
         app: './src/js/app.js'
     },
-
     //path for files
     output: {
         filename: 'js/[name].[hash].js',
         path: path.resolve(__dirname, 'dist'),
         // publicPath: '../'
     },
-
-    //dev-server configuration
-    // devServer: {
-    //     contentBase: './app'
-    // },
-
     module: {
         rules: [
             //php
@@ -131,6 +119,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'contact.html',
             template: 'app/contact.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'voorbeeld.html',
+            template: 'app/voorbeeld.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'voorbeeld-next.html',
+            template: 'app/voorbeeld-next.html'
         })
     ],
 };
